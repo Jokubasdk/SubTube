@@ -1,2 +1,0 @@
-# SubTube
-Our YouTube app
