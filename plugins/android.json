@@ -20,6 +20,15 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.test.subtube"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.test.subtube"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.test.subtube"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.test.subtube"
         }
     },
     "dependent_plugins": {}
