@@ -1,0 +1,4 @@
+{
+    "android": "4.1.1",
+    "ubuntu": "https://github.com/apache/cordova-ubuntu"
+}
