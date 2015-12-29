@@ -11,15 +11,29 @@
     <feature name="Notification">
         <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
     </feature>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
     <allow-intent href="market:*" />
-    <name>SubTube</name>
+    <hook src="assets/android_copy_assets.js" type="after_prepare" />
+    <splash density="port-ldpi" src="assets/android/SubTube/splash/SubTube 240x320 splash.png" />
+    <splash density="port-mdpi" src="assets/android/SubTube/splash/splash-port-xhdpi.png" />
+    <splash density="port-hdpi" src="assets/android/SubTube/splash/splash-port-xhdpi.png" />
+    <splash density="port-xhdpi" src="assets/android/SubTube/splash/splash-port-xhdpi.png" />
+    <name>
+        SubTube
+    </name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Our SubTube app, a WIP.
     </description>
-    <icon src="www/img/logo.png" />
     <author email="HackerManiac@users.noreply.github.com">
-		Vidminas Mikucionis
-	</author>
+        Vidminas Mikucionis
+    </author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -28,4 +42,12 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <icon src="assets/logo.png" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#ffffff" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="LoadingDialog" value="Loading, Please wait!" />
+    <preference name="AutoHideSplashScreen" value="true" />
 </widget>

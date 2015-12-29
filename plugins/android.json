@@ -29,6 +29,12 @@
         },
         "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "com.test.subtube"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.test.subtube"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.test.subtube"
         }
     },
     "dependent_plugins": {}

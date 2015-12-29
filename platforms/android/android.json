@@ -19,6 +19,14 @@
                         {
                             "xml": "<feature name=\"Notification\"><param name=\"android-package\" value=\"org.apache.cordova.dialogs.Notification\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -36,6 +44,12 @@
             "PACKAGE_NAME": "com.test.subtube"
         },
         "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.test.subtube"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.test.subtube"
+        },
+        "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.test.subtube"
         }
     },
@@ -70,12 +84,30 @@
             "merges": [
                 "navigator.notification"
             ]
+        },
+        {
+            "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+            "id": "cordova-plugin-statusbar.statusbar",
+            "pluginId": "cordova-plugin-statusbar",
+            "clobbers": [
+                "window.StatusBar"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+            "id": "cordova-plugin-splashscreen.SplashScreen",
+            "pluginId": "cordova-plugin-splashscreen",
+            "clobbers": [
+                "navigator.splashscreen"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-whitelist": "1.0.0",
         "cordova-plugin-device": "1.1.0",
         "cordova-plugin-console": "1.0.2",
-        "cordova-plugin-dialogs": "1.2.0"
+        "cordova-plugin-dialogs": "1.2.0",
+        "cordova-plugin-statusbar": "2.0.0",
+        "cordova-plugin-splashscreen": "3.0.0"
     }
 }

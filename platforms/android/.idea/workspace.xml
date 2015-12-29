@@ -1,7 +1,604 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <target>android-23</target>
+      </config>
+    </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/res/layout/splash.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+    </layouts>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="76d0c700-8859-4485-8ca3-e35b81b63602" name="Default" comment="" />
+    <list default="true" id="76d0c700-8859-4485-8ca3-e35b81b63602" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/test/subtube/CustomAnimationDrawable.java" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\SubTube splash 240x320 base.pdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\SubTube splash 240x320 crystallize.pdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\SubTube splash 240x320 crystallize.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\SubTube splash 240x320 frosted glass.pdn" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\SubTube splash 240x320 frosted glass.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\platforms\android\CordovaLib\build\intermediates\incremental\aidl\debug\dependency.store" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\platforms\android\CordovaLib\build\intermediates\incremental\mergeAssets\debug\merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\platforms\android\CordovaLib\build\intermediates\incremental\packageResources\debug\merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\platforms\android\CordovaLib\build\tmp\packageDebugJar\MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\platforms\android\assets\www\img\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\platforms\android\res\drawable-land-hdpi\screen.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\platforms\android\res\drawable-land-ldpi\screen.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\platforms\android\res\drawable-land-mdpi\screen.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\platforms\android\res\drawable-land-xhdpi\screen.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\css\pageslider.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\css\ratchet-theme-android.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\css\ratchet-theme-android.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\css\ratchet-theme-ios.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\css\ratchet-theme-ios.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\css\ratchet.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\css\ratchet.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\css\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\fonts\ratchicons.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\fonts\ratchicons.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\fonts\ratchicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\fonts\ratchicons.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\Amy_Jones.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\Amy_Jones50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\Eugene_Lee.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\Eugene_Lee50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\Gary_Donovan.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\Gary_Donovan50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\James_King.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\James_King50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\John_Williams.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\John_Williams50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\Julie_Taylor.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\Julie_Taylor50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\Kathleen_Byrne.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\Kathleen_Byrne50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\Lisa_Wong.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\Lisa_Wong50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\Paul_Jones.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\Paul_Jones50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\Paula_Gates.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\Paula_Gates50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\Ray_Moore.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\Ray_Moore50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\Steven_Wells.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\pics\Steven_Wells50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\css\topcoat-mobile-light.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\css\topcoat-mobile-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\font\LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\font\SourceCodePro-Black.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\font\SourceCodePro-Bold.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\font\SourceCodePro-ExtraLight.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\font\SourceCodePro-Light.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\font\SourceCodePro-Regular.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\font\SourceCodePro-Semibold.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\font\SourceSansPro-Black.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\font\SourceSansPro-BlackIt.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\font\SourceSansPro-Bold.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\font\SourceSansPro-BoldIt.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\font\SourceSansPro-ExtraLight.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\font\SourceSansPro-ExtraLightIt.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\font\SourceSansPro-It.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\font\SourceSansPro-Light.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\font\SourceSansPro-LightIt.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\font\SourceSansPro-Regular.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\font\SourceSansPro-Semibold.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\font\SourceSansPro-SemiboldIt.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\img\back_light.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\img\call.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\img\chat.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\img\email.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\img\next.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\img\next_blue.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\img\search-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\img\search-bg2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\img\search.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\img\search_bw.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\img\search_dark.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\img\search_light.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\img\spinner.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\assets\topcoat\img\spinner2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\js\EmployeeListView.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\js\EmployeeView.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\js\HomeView.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\js\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\js\models.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\lib\backbone.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\lib\fastclick.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\lib\handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\lib\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\lib\pageslider.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-backbone\lib\underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\css\images\ic_action_add.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\css\images\ic_action_arrow_left.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\css\images\ic_action_book.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\css\images\ic_action_bookmark.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\css\images\ic_action_dialog.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\css\images\ic_action_download.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\css\images\ic_action_goleft.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\css\images\ic_action_location.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\css\images\ic_action_mail.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\css\images\ic_action_monolog.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\css\images\ic_action_phone_outgoing.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\css\images\ic_action_search.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\css\images\ic_action_user.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\css\images\ic_action_users.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\css\pageslider.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\css\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\Amy_Jones.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\Amy_Jones50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\Eugene_Lee.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\Eugene_Lee50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\Gary_Donovan.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\Gary_Donovan50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\James_King.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\James_King50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\John_Williams.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\John_Williams50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\Julie_Taylor.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\Julie_Taylor50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\Kathleen_Byrne.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\Kathleen_Byrne50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\Lisa_Wong.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\Lisa_Wong50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\Paul_Jones.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\Paul_Jones50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\Paula_Gates.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\Paula_Gates50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\Ray_Moore.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\Ray_Moore50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\Steven_Wells.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\pics\Steven_Wells50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\ratchet\css\ratchet-theme-android.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\ratchet\css\ratchet-theme-android.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\ratchet\css\ratchet-theme-ios.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\ratchet\css\ratchet-theme-ios.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\ratchet\css\ratchet.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\ratchet\css\ratchet.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\ratchet\fonts\ratchicons.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\ratchet\fonts\ratchicons.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\ratchet\fonts\ratchicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\assets\ratchet\fonts\ratchicons.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\js\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\js\services\json\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\js\services\localstorage\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\js\services\memory\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\js\services\websql\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\lib\fastclick.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\lib\handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\lib\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\lib\pageslider.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part05\lib\router.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\css\images\ic_action_add.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\css\images\ic_action_arrow_left.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\css\images\ic_action_book.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\css\images\ic_action_bookmark.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\css\images\ic_action_dialog.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\css\images\ic_action_download.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\css\images\ic_action_goleft.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\css\images\ic_action_location.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\css\images\ic_action_mail.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\css\images\ic_action_monolog.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\css\images\ic_action_phone_outgoing.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\css\images\ic_action_search.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\css\images\ic_action_user.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\css\images\ic_action_users.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\css\pageslider.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\css\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\Amy_Jones.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\Amy_Jones50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\Eugene_Lee.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\Eugene_Lee50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\Gary_Donovan.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\Gary_Donovan50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\James_King.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\James_King50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\John_Williams.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\John_Williams50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\Julie_Taylor.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\Julie_Taylor50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\Kathleen_Byrne.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\Kathleen_Byrne50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\Lisa_Wong.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\Lisa_Wong50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\Paul_Jones.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\Paul_Jones50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\Paula_Gates.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\Paula_Gates50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\Ray_Moore.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\Ray_Moore50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\Steven_Wells.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\pics\Steven_Wells50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\ratchet\css\ratchet-theme-android.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\ratchet\css\ratchet-theme-android.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\ratchet\css\ratchet-theme-ios.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\ratchet\css\ratchet-theme-ios.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\ratchet\css\ratchet.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\ratchet\css\ratchet.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\ratchet\fonts\ratchicons.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\ratchet\fonts\ratchicons.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\ratchet\fonts\ratchicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\assets\ratchet\fonts\ratchicons.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\js\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\js\services\json\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\js\services\localstorage\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\js\services\memory\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\js\services\websql\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\lib\fastclick.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\lib\handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\lib\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\lib\pageslider.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part06\lib\router.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\css\images\ic_action_add.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\css\images\ic_action_arrow_left.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\css\images\ic_action_book.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\css\images\ic_action_bookmark.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\css\images\ic_action_dialog.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\css\images\ic_action_download.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\css\images\ic_action_goleft.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\css\images\ic_action_location.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\css\images\ic_action_mail.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\css\images\ic_action_monolog.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\css\images\ic_action_phone_outgoing.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\css\images\ic_action_search.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\css\images\ic_action_user.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\css\images\ic_action_users.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\css\pageslider.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\css\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\Amy_Jones.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\Amy_Jones50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\Eugene_Lee.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\Eugene_Lee50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\Gary_Donovan.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\Gary_Donovan50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\James_King.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\James_King50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\John_Williams.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\John_Williams50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\Julie_Taylor.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\Julie_Taylor50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\Kathleen_Byrne.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\Kathleen_Byrne50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\Lisa_Wong.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\Lisa_Wong50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\Paul_Jones.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\Paul_Jones50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\Paula_Gates.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\Paula_Gates50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\Ray_Moore.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\Ray_Moore50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\Steven_Wells.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\pics\Steven_Wells50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\ratchet\css\ratchet-theme-android.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\ratchet\css\ratchet-theme-android.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\ratchet\css\ratchet-theme-ios.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\ratchet\css\ratchet-theme-ios.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\ratchet\css\ratchet.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\ratchet\css\ratchet.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\ratchet\fonts\ratchicons.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\ratchet\fonts\ratchicons.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\ratchet\fonts\ratchicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\assets\ratchet\fonts\ratchicons.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\js\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\js\services\json\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\js\services\localstorage\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\js\services\memory\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\js\services\websql\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\lib\fastclick.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\lib\handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\lib\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\lib\pageslider.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part07\lib\router.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\css\images\ic_action_add.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\css\images\ic_action_arrow_left.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\css\images\ic_action_book.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\css\images\ic_action_bookmark.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\css\images\ic_action_dialog.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\css\images\ic_action_download.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\css\images\ic_action_goleft.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\css\images\ic_action_location.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\css\images\ic_action_mail.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\css\images\ic_action_monolog.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\css\images\ic_action_phone_outgoing.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\css\images\ic_action_search.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\css\images\ic_action_user.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\css\images\ic_action_users.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\css\pageslider.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\css\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\Amy_Jones.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\Amy_Jones50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\Eugene_Lee.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\Eugene_Lee50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\Gary_Donovan.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\Gary_Donovan50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\James_King.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\James_King50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\John_Williams.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\John_Williams50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\Julie_Taylor.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\Julie_Taylor50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\Kathleen_Byrne.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\Kathleen_Byrne50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\Lisa_Wong.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\Lisa_Wong50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\Paul_Jones.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\Paul_Jones50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\Paula_Gates.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\Paula_Gates50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\Ray_Moore.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\Ray_Moore50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\Steven_Wells.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\pics\Steven_Wells50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\ratchet\css\ratchet-theme-android.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\ratchet\css\ratchet-theme-android.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\ratchet\css\ratchet-theme-ios.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\ratchet\css\ratchet-theme-ios.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\ratchet\css\ratchet.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\ratchet\css\ratchet.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\ratchet\fonts\ratchicons.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\ratchet\fonts\ratchicons.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\ratchet\fonts\ratchicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\assets\ratchet\fonts\ratchicons.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\js\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\js\services\json\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\js\services\localstorage\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\js\services\memory\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\js\services\websql\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\lib\fastclick.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\lib\handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\lib\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\lib\pageslider.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part08\lib\router.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\css\images\ic_action_add.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\css\images\ic_action_arrow_left.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\css\images\ic_action_book.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\css\images\ic_action_bookmark.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\css\images\ic_action_dialog.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\css\images\ic_action_download.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\css\images\ic_action_goleft.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\css\images\ic_action_location.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\css\images\ic_action_mail.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\css\images\ic_action_monolog.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\css\images\ic_action_phone_outgoing.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\css\images\ic_action_search.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\css\images\ic_action_user.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\css\images\ic_action_users.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\css\pageslider.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\css\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\Amy_Jones.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\Amy_Jones50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\Eugene_Lee.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\Eugene_Lee50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\Gary_Donovan.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\Gary_Donovan50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\James_King.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\James_King50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\John_Williams.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\John_Williams50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\Julie_Taylor.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\Julie_Taylor50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\Kathleen_Byrne.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\Kathleen_Byrne50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\Lisa_Wong.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\Lisa_Wong50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\Paul_Jones.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\Paul_Jones50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\Paula_Gates.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\Paula_Gates50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\Ray_Moore.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\Ray_Moore50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\Steven_Wells.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\pics\Steven_Wells50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\ratchet\css\ratchet-theme-android.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\ratchet\css\ratchet-theme-android.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\ratchet\css\ratchet-theme-ios.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\ratchet\css\ratchet-theme-ios.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\ratchet\css\ratchet.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\ratchet\css\ratchet.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\ratchet\fonts\ratchicons.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\ratchet\fonts\ratchicons.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\ratchet\fonts\ratchicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\assets\ratchet\fonts\ratchicons.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\js\EmployeeListView.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\js\HomeView.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\js\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\js\services\json\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\js\services\localstorage\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\js\services\memory\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\js\services\websql\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\lib\fastclick.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\lib\handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\lib\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\lib\pageslider.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part09\lib\router.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\css\images\ic_action_add.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\css\images\ic_action_arrow_left.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\css\images\ic_action_book.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\css\images\ic_action_bookmark.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\css\images\ic_action_dialog.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\css\images\ic_action_download.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\css\images\ic_action_goleft.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\css\images\ic_action_location.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\css\images\ic_action_mail.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\css\images\ic_action_monolog.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\css\images\ic_action_phone_outgoing.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\css\images\ic_action_search.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\css\images\ic_action_user.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\css\images\ic_action_users.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\css\pageslider.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\css\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\Amy_Jones.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\Amy_Jones50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\Eugene_Lee.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\Eugene_Lee50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\Gary_Donovan.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\Gary_Donovan50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\James_King.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\James_King50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\John_Williams.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\John_Williams50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\Julie_Taylor.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\Julie_Taylor50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\Kathleen_Byrne.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\Kathleen_Byrne50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\Lisa_Wong.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\Lisa_Wong50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\Paul_Jones.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\Paul_Jones50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\Paula_Gates.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\Paula_Gates50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\Ray_Moore.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\Ray_Moore50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\Steven_Wells.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\pics\Steven_Wells50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\ratchet\css\ratchet-theme-android.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\ratchet\css\ratchet-theme-android.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\ratchet\css\ratchet-theme-ios.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\ratchet\css\ratchet-theme-ios.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\ratchet\css\ratchet.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\ratchet\css\ratchet.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\ratchet\fonts\ratchicons.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\ratchet\fonts\ratchicons.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\ratchet\fonts\ratchicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\assets\ratchet\fonts\ratchicons.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\js\EmployeeListView.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\js\EmployeeView.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\js\HomeView.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\js\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\js\services\json\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\js\services\localstorage\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\js\services\memory\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\js\services\websql\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\lib\fastclick.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\lib\handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\lib\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\lib\pageslider.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part10\lib\router.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\css\images\ic_action_add.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\css\images\ic_action_arrow_left.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\css\images\ic_action_book.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\css\images\ic_action_bookmark.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\css\images\ic_action_dialog.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\css\images\ic_action_download.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\css\images\ic_action_goleft.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\css\images\ic_action_location.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\css\images\ic_action_mail.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\css\images\ic_action_monolog.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\css\images\ic_action_phone_outgoing.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\css\images\ic_action_search.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\css\images\ic_action_user.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\css\images\ic_action_users.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\css\pageslider.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\css\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\Amy_Jones.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\Amy_Jones50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\Eugene_Lee.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\Eugene_Lee50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\Gary_Donovan.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\Gary_Donovan50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\James_King.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\James_King50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\John_Williams.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\John_Williams50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\Julie_Taylor.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\Julie_Taylor50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\Kathleen_Byrne.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\Kathleen_Byrne50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\Lisa_Wong.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\Lisa_Wong50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\Paul_Jones.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\Paul_Jones50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\Paula_Gates.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\Paula_Gates50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\Ray_Moore.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\Ray_Moore50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\Steven_Wells.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\pics\Steven_Wells50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\ratchet\css\ratchet-theme-android.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\ratchet\css\ratchet-theme-android.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\ratchet\css\ratchet-theme-ios.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\ratchet\css\ratchet-theme-ios.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\ratchet\css\ratchet.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\ratchet\css\ratchet.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\ratchet\fonts\ratchicons.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\ratchet\fonts\ratchicons.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\ratchet\fonts\ratchicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\assets\ratchet\fonts\ratchicons.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\js\EmployeeListView.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\js\EmployeeView.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\js\HomeView.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\js\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\js\services\json\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\js\services\localstorage\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\js\services\memory\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\js\services\websql\EmployeeService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\lib\fastclick.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\lib\handlebars.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\lib\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\lib\pageslider.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\solutions\directory-solutions\part11\lib\router.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\www-old\img\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Vidminas\Dropbox\SubTube\www\img\logo.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" afterPath="$PROJECT_DIR$/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/bundles/debug/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/res/resources-debug-androidTest.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-port-hdpi/screen.png" afterPath="$PROJECT_DIR$/res/drawable-port-hdpi/screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-port-ldpi/screen.png" afterPath="$PROJECT_DIR$/res/drawable-port-ldpi/screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-port-mdpi/screen.png" afterPath="$PROJECT_DIR$/res/drawable-port-mdpi/screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-port-xhdpi/screen.png" afterPath="$PROJECT_DIR$/res/drawable-port-xhdpi/screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/bundles/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/bundles/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/bundles/debug/aapt/AndroidManifest.xml" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/bundles/debug/aapt/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CordovaLib/build/generated/source/buildConfig/androidTest/debug/org/apache/cordova/test/BuildConfig.java" afterPath="$PROJECT_DIR$/CordovaLib/build/generated/source/buildConfig/androidTest/debug/org/apache/cordova/test/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CordovaLib/build/generated/source/buildConfig/debug/org/apache/cordova/BuildConfig.java" afterPath="$PROJECT_DIR$/CordovaLib/build/generated/source/buildConfig/debug/org/apache/cordova/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/test/subtube/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/test/subtube/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android.json" afterPath="$PROJECT_DIR$/android.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../plugins/android.json" afterPath="$PROJECT_DIR$/../../plugins/android.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/www/js/app.js" afterPath="$PROJECT_DIR$/assets/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../www/js/app.js" afterPath="$PROJECT_DIR$/../../www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../config.xml" afterPath="$PROJECT_DIR$/../../config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/xml/config.xml" afterPath="$PROJECT_DIR$/res/xml/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/assets/www/cordova_plugins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platform_www/cordova_plugins.js" afterPath="$PROJECT_DIR$/platform_www/cordova_plugins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../plugins/fetch.json" afterPath="$PROJECT_DIR$/../../plugins/fetch.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/www/index.html" afterPath="$PROJECT_DIR$/assets/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../www/index.html" afterPath="$PROJECT_DIR$/../../www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/incremental/mergeDebugAndroidTestAssets/merger.xml" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/incremental/mergeDebugAndroidTestAssets/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/incremental/packageDebugResources/merger.xml" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/incremental/packageDebugResources/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="android.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,17 +627,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/test/subtube/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44347826">
-              <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#2419#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1590#1742#0" expanded="true" />
+                <element signature="e#1741#1742#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loading.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/loading.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.275862">
+              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loading.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../assets/android/SubTube/loading/layout/loading.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.41391304">
+              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="android_copy_assets.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../assets/android_copy_assets.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -1220,7 +1872,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="C:\Users\Vidminas\Dropbox\SubTube\platforms\android" value="5797143496133" />
+        <entry key="C:\Users\Vidminas\Dropbox\SubTube\platforms\android" value="5803704233410" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1565,7 +2217,22 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/res/values/splashLayout.xml" />
+        <option value="$PROJECT_DIR$/res/anim/fade.xml" />
+        <option value="$PROJECT_DIR$/res/layout/splashLayout.xml" />
+        <option value="$PROJECT_DIR$/res/layout/splash.xml" />
+        <option value="$PROJECT_DIR$/src/com/test/subtube/CustomAnimationDrawable.java" />
+        <option value="$PROJECT_DIR$/res/anim/draw.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/../../res/android/SubTube/loadingScreen.js" />
+        <option value="$PROJECT_DIR$/../../res/android/SubTube/copyAssets.js" />
+        <option value="$PROJECT_DIR$/../../jshint.js" />
+        <option value="$PROJECT_DIR$/../../android_copy_assets.js" />
+        <option value="$PROJECT_DIR$/../../config.xml" />
+        <option value="$PROJECT_DIR$/../../assets/android_copy_assets.js" />
+        <option value="$PROJECT_DIR$/res/layout/loading.xml" />
         <option value="$PROJECT_DIR$/src/com/test/subtube/MainActivity.java" />
+        <option value="$PROJECT_DIR$/../../assets/android/SubTube/loading/layout/loading.xml" />
       </list>
     </option>
   </component>
@@ -1611,11 +2278,143 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xml" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subtube" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="android" />
@@ -1624,11 +2423,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
@@ -1649,6 +2450,8 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="694" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="0019beeb0f502f" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.SHOW" value="true" />
   </component>
   <component name="RunManager" selected="Android Application.android">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1670,6 +2473,26 @@
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1710,6 +2533,11 @@
         <option name="Make" enabled="false" />
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -1797,39 +2625,49 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.47228146" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5058043" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814237" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.49733475" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.46801707" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5026652" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.4941957" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5058043" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933258" sideWeight="0.49573562" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1844,7 +2682,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -1852,7 +2692,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#2419#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1590#1742#0" expanded="true" />
+            <element signature="e#1741#1742#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1860,7 +2705,64 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#2419#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1590#1742#0" expanded="true" />
+            <element signature="e#1741#1742#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/subtube/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#2419#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1590#1742#0" expanded="true" />
+            <element signature="e#1741#1742#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/subtube/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#2419#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1590#1742#0" expanded="true" />
+            <element signature="e#1741#1742#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/subtube/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#2419#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1590#1742#0" expanded="true" />
+            <element signature="e#1741#1742#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/subtube/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#2419#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1590#1742#0" expanded="true" />
+            <element signature="e#1741#1742#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1868,7 +2770,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#0#2419#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1590#1742#0" expanded="true" />
+            <element signature="e#1741#1742#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1876,7 +2783,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#2419#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1590#1742#0" expanded="true" />
+            <element signature="e#1741#1742#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1884,7 +2796,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#2419#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1590#1742#0" expanded="true" />
+            <element signature="e#1741#1742#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1892,14 +2809,156 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#2419#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1590#1742#0" expanded="true" />
+            <element signature="e#1741#1742#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/intermediates/manifests/full/debug/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50956523">
+          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/dev/android-sdk/sources/android-23/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47304347">
+          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/CordovaActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.82086957">
+          <caret line="104" column="16" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/dev/android-sdk/sources/android-23/android/graphics/drawable/AnimationDrawable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.5739131">
+          <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CordovaLib/cordova.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#858#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CordovaLib/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.187826">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#799#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5426087">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#858#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/subtube/CustomAnimationDrawable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73913044">
+          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#979#1089#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47304347">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/subtube/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44347826">
-          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#2419#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1590#1742#0" expanded="true" />
+            <element signature="e#1741#1742#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../assets/android_copy_assets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/loading.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.275862">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../assets/android/SubTube/loading/layout/loading.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41391304">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
           <folding />
         </state>
       </provider>
