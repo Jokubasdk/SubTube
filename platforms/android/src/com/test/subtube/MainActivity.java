@@ -52,7 +52,7 @@ public class MainActivity extends CordovaActivity
         final int frames = 30;
         final int frameWidth = 240;
         final int frameHeight = 320;
-        final int frameDuration = 100;
+        final int frameDuration = 500;
         final Bitmap bmpImage = BitmapFactory.decodeResource(getResources(), R.drawable.loading);
 
         for (int currentFrame = 0; currentFrame < frames; currentFrame++) {

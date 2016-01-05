@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html class="devsite" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script src="YouTube%20Data%20API%20Overview%20%C2%A0_%C2%A0%20YouTube%20Data%20API%20%C2%A0_%C2%A0%20Google%20Developers_bestanden/linkid.js" async="" type="text/javascript"></script><script src="YouTube%20Data%20API%20Overview%20%C2%A0_%C2%A0%20YouTube%20Data%20API%20%C2%A0_%C2%A0%20Google%20Developers_bestanden/analytics.js" async=""></script><script>var a=window.devsite||{};window.devsite=a;a.readyCallbacks=[];window.devsite.readyCallbacks=a.readyCallbacks;a.ready=function(c){a.readyCallbacks.push(c)};window.devsite.ready=a.ready;a.timing={};window.devsite=a;window.devsite.timing=a.timing;a.timing.timers=[];a.timing.tick=function(c,b,g){for(var d=0;d<a.timing.timers.length;d++)a.timing.timers[d].tick(c,b,g)};window.devsite.timing.tick=a.timing.tick;a.timing.report=function(c){a.setTimeout(function(){for(var b=0;b<a.timing.timers.length;b++)window.jstiming.report(a.timing.timers[b],c)},500)};
+a.timing.init=function(c){a.timing.timers.push(window.jstiming.load);if(c){var b=new window.jstiming.Timer;b.name=c;a.timing.timers.push(b)}document.addEventListener&&window.addEventListener&&(document.addEventListener("DOMContentLoaded",a.timing.handleDomContentLoaded,!1),window.addEventListener("load",a.timing.handleLoad,!1))};a.timing.handleDomContentLoaded=function(){a.timing.tick("ol");document.removeEventListener("DOMContentLoaded",a.timing.handleDomContentLoaded,!1)};
+a.timing.handleLoad=function(){window.removeEventListener("load",a.timing.handleLoad,!1);var c=document.querySelector("#devsite-request-elapsed");c&&(c=parseInt(c.getAttribute("data-request-elapsed"),10))&&(a.timing.tick("_st_start",null,1),a.timing.tick("st","_st_start",1+c));a.timing.tick("prt");a.timing.report()};(function(){function c(b){this.t={};this.tick=function(b,c,d){var e=void 0!=d?d:(new Date).getTime();this.t[b]=[e,c];if(void 0==d)try{window.console.timeStamp("CSI/"+b)}catch(f){}};this.tick("start",null,b)}var b;window.performance&&(b=window.performance.timing);var g=b?new c(b.responseStart):new c;window.jstiming={Timer:c,load:g};if(b){var d=b.navigationStart,f=b.responseStart;0<d&&f>=d&&(window.jstiming.srt=f-d)}if(b){var e=window.jstiming.load;0<d&&f>=d&&(e.tick("_wtsrt",void 0,d),e.tick("wtsrt_",
+"_wtsrt",f),e.tick("tbsd_","wtsrt_"))}try{b=null,window.chrome&&window.chrome.csi&&(b=Math.floor(window.chrome.csi().pageT),e&&0<d&&(e.tick("_tbnd",void 0,window.chrome.csi().startE),e.tick("tbnd_","_tbnd",d))),null==b&&window.gtbExternal&&(b=window.gtbExternal.pageT()),null==b&&window.external&&(b=window.external.pageT,e&&0<d&&(e.tick("_tbnd",void 0,window.external.startE),e.tick("tbnd_","_tbnd",d))),b&&(window.jstiming.pt=b)}catch(h){}})();
+devsite.timing.init('DocPage');</script><link href="https://developers.google.com/youtube/v3/getting-started" rel="canonical"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="https://plus.google.com/+GoogleDevelopers/" rel="publisher"><link rel="alternate" href="https://developers.google.com/youtube/v3/getting-started?hl=ja" hreflang="ja"><link rel="alternate" href="https://developers.google.com/youtube/v3/getting-started?hl=pt-br" hreflang="pt-br"><link rel="alternate" href="https://developers.google.com/youtube/v3/getting-started?hl=es" hreflang="es"><link rel="alternate" href="https://developers.google.com/youtube/v3/getting-started?hl=ko" hreflang="ko"><link rel="alternate" href="https://developers.google.com/youtube/v3/getting-started?hl=en" hreflang="en"><meta name="xsrf_token" content="L6IEfMajoihZ_4m6HePEYVQ3VB6rzKCqMhRdUD_gXSw6MTQ1MjAxMzUyNDM2NDE3MA"><link href="YouTube%20Data%20API%20Overview%20%C2%A0_%C2%A0%20YouTube%20Data%20API%20%C2%A0_%C2%A0%20Google%20Developers_bestanden/css.css" rel="stylesheet"><link rel="stylesheet" href="YouTube%20Data%20API%20Overview%20%C2%A0_%C2%A0%20YouTube%20Data%20API%20%C2%A0_%C2%A0%20Google%20Developers_bestanden/devsite-youtube-red.css"><link rel="shortcut icon" href="https://www.gstatic.com/images/icons/material/product/2x/developers_32dp.png"><link rel="apple-touch-icon" href="https://www.gstatic.com/images/icons/material/product/2x/developers_64dp.png"><link data-title="Google Developers" aria-label="Google Developers" data-tooltip="Google Developers" data-tooltip-align="b,c" rel="search" type="application/opensearchdescription+xml" href="https://developers.google.com/s/opensearch.xml"><script src="YouTube%20Data%20API%20Overview%20%C2%A0_%C2%A0%20YouTube%20Data%20API%20%C2%A0_%C2%A0%20Google%20Developers_bestanden/jquery.js"></script><style></style><script>devsite.timing.tick('cl');</script><meta property="og:site_name" content="Google Developers"><meta property="og:type" content="website"><meta property="og:url" content="https://developers.google.com/youtube/v3/getting-started"><meta property="og:locale" content="en"><script>
+    var ___gcfg = ___gcfg || {};
+    ___gcfg.lang = 'nl';
+  </script><title>YouTube Data API Overview &nbsp;|&nbsp;
+      YouTube Data API &nbsp;|&nbsp;
+      Google Developers</title><meta property="og:title" content="YouTube Data API Overview"></head><body class="devsite-doc-page
+                 no-touch" id="top_of_page"><div style="margin-top: 0px;" class="devsite-wrapper"><header style="position: fixed;" class="devsite-top-section
+               
+               "><div style="position: relative;" class="devsite-top-logo-row-wrapper-wrapper"><div class="devsite-top-logo-row-wrapper"><div class="devsite-top-logo-row devsite-full-site-width"><a class="devsite-logo gc-analytics-event" href="https://developers.google.com/" data-category="Site-Wide Custom Events" data-label="Site logo"><img src="YouTube%20Data%20API%20Overview%20%C2%A0_%C2%A0%20YouTube%20Data%20API%20%C2%A0_%C2%A0%20Google%20Developers_bestanden/devsite-logo-white-icon-new.svg" alt="Google Developers icon" class="devsite-logo-icon"><img src="YouTube%20Data%20API%20Overview%20%C2%A0_%C2%A0%20YouTube%20Data%20API%20%C2%A0_%C2%A0%20Google%20Developers_bestanden/devsite-logo-white-wordmark-new.svg" alt="Google Developers" class="devsite-logo-wordmark"></a><div class="devsite-search-wrapper devsite-history-enabled"><form class="devsite-search-form" action="https://developers.google.com/s/results/" method="GET" id="top-search"><div id="searchbox" class="devsite-searchbox"><span aria-label="Restrict search to YouTube Data API" data-tooltip="Restrict search to YouTube Data API" data-tooltip-align="b,c" class="devsite-search-chip">YouTube Data API<span class="devsite-search-chip-close material-icons"></span></span><input placeholder="Zoeken" class="devsite-search-field devsite-search-query" name="q" autocomplete="off" type="text"><div class="devsite-search-image material-icons"></div></div><input name="p" id="search_project" value="/youtube/v3" data-project-name="YouTube Data API" data-project-path="/youtube/v3" data-query-match="" type="hidden"><input id="suggest-category-label-2" value="Pagina's in YouTube Data API" type="hidden"><input id="suggest-category-label-3" value="Naslag in YouTube Data API" type="hidden"><input id="suggest-category-label-1" value="Producten" type="hidden"><input id="suggest-all-results-label" value="Alle resultaten bekijken voor" type="hidden"><div class="devsite-popout devsite-popout-closed"><div style="display: none;"><div style="display: none;" class="devsite-suggest-container">   <div class="devsite-suggest-wrapper">     <div class="devsite-suggest-side-column">       <div class="devsite-suggest-icon material-icons"></div>     </div>     <div class="devsite-suggest-main-column">       <div class="devsite-suggest-column devsite-nav" id="devsite-recent-column">       <ul tabindex="0" role="menu" id="ui-id-1" class="devsite-suggest-results ui-menu ui-widget ui-widget-content"></ul></div>     </div> </div></div></div><div class="devsite-history-container"><div class="devsite-history-wrapper"><div class="devsite-history-side-column"><div class="devsite-history-icon material-icons"></div></div><div class="devsite-history-main-column">Log in om de pagina's te bekijken die u vaak bezoekt.<div class="devsite-history-footer"><a href="https://myaccount.google.com/privacy#accounthistory" class="devsite-history-preferences-link button button-white">Geschiedenisvoorkeuren</a></div></div></div></div></div></form></div><div class="devsite-user-wrapper"><a href="https://www.google.com/accounts/ServiceLogin?passive=true&amp;continue=https%3A%2F%2Fdevelopers.google.com%2Fyoutube%2Fv3%2Fgetting-started&amp;service=ahsid" class="devsite-user-signin devsite-top-button button gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Sign in button">
+            
+            Aanmelden
+          </a></div><button type="button" class="devsite-search-button button-flat material-icons"></button></div></div></div><div style="margin-top: -120px;" class="devsite-collapsible-section"><div class="devsite-header-background devsite-full-site-width"><div style="visibility: hidden;" class="devsite-site-nav-row devsite-full-site-width"><nav class="devsite-site-nav devsite-nav"><ul class="devsite-site-nav-list"><li class="devsite-breadcrumb-wrapper
+                
+                       devsite-breadcrumb-parent
+                "><a href="https://developers.google.com/products/" class="devsite-breadcrumb gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumb: parent" data-value="1">
+                Producten
+              </a></li><li class="devsite-breadcrumb-wrapper
+                
+                       devsite-breadcrumb-parent
+                "><div class="devsite-breadcrumb-guillemet material-icons"></div><a href="https://developers.google.com/youtube/" class="devsite-breadcrumb gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumb: parent" data-value="2">
+                YouTube
+              </a></li><li class="devsite-breadcrumb-wrapper
+                
+                       devsite-breadcrumb-project
+                "><div class="devsite-breadcrumb-guillemet material-icons"></div><a href="https://developers.google.com/youtube/v3/" class="devsite-breadcrumb gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumb: project" data-value="3">
+                YouTube Data API
+              </a></li><li class="devsite-breadcrumb-wrapper
+                
+                       devsite-breadcrumb-tab
+                "><div class="devsite-breadcrumb-guillemet material-icons"></div><a href="https://developers.google.com/youtube/v3/getting-started" class="devsite-breadcrumb gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumb: tab" data-value="4">
+                Handleidingen
+              </a></li><li class="devsite-breadcrumb-wrapper
+                
+                       devsite-breadcrumb-self
+                "><div class="devsite-breadcrumb-guillemet material-icons"></div><a href="#top_of_page" class="devsite-breadcrumb gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumb: current_page" data-value="5">
+                YouTube Data API Overview
+              </a></li></ul></nav></div><div style="visibility: hidden;" class="devsite-product-id-row devsite-full-site-width"><div class="devsite-product-id-row-links-container"><a class="devsite-product-logo-link gc-analytics-event" href="https://developers.google.com/youtube/v3/" data-category="Site-Wide Custom Events" data-label="Project logo (header)"><img src="YouTube%20Data%20API%20Overview%20%C2%A0_%C2%A0%20YouTube%20Data%20API%20%C2%A0_%C2%A0%20Google%20Developers_bestanden/logo-youtube-white.svg" class="devsite-product-logo-white" alt="YouTube Data API"></a><a class="devsite-product-name gc-analytics-event" href="https://developers.google.com/youtube/v3/" data-category="Site-Wide Custom Events" data-label="Project name (header)">
+      YouTube Data API
+    </a></div></div><div class="devsite-doc-set-nav-row devsite-full-site-width"><nav class="devsite-doc-set-nav devsite-nav"><ul class="devsite-doc-set-nav-tab-list"><li class="devsite-doc-set-nav-tab-container"><a href="https://developers.google.com/youtube/v3/" class="
+                                       devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Startpagina">
+          Startpagina
+        </a></li><li class="devsite-doc-set-nav-tab-container"><a href="https://developers.google.com/youtube/v3/getting-started" class="devsite-doc-set-nav-active
+                                       devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Handleidingen">
+          Handleidingen
+        </a></li><li class="devsite-doc-set-nav-tab-container"><a href="https://developers.google.com/youtube/v3/docs/" class="
+                                       devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Naslag">
+          Naslag
+        </a></li><li class="devsite-doc-set-nav-tab-container"><a href="https://developers.google.com/youtube/v3/code_samples/" class="
+                                       devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Voorbeelden">
+          Voorbeelden
+        </a></li><li class="devsite-doc-set-nav-tab-container"><a href="https://developers.google.com/youtube/v3/support" class="
+                                       devsite-doc-set-nav-tab gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Ondersteuning">
+          Ondersteuning
+        </a></li></ul></nav></div></div></div></header><script>
+  if (window.jQuery) {
+    $(document).ready(function() {
+      if (window.devsite && window.devsite.search) {
+        
+        window.devsite.search.init('nl', false, null)
+      }
+    });
+  }
+</script><div id="gc-wrapper" itemscope="" itemtype="http://schema.org/Article"><input class="google-analytics-id-json" value="{&quot;dimensions&quot;: {&quot;dimension6&quot;: &quot;en&quot;, &quot;dimension4&quot;: &quot;YouTube Data API&quot;, &quot;dimension5&quot;: &quot;nl&quot;, &quot;dimension3&quot;: false, &quot;dimension1&quot;: &quot;Signed out&quot;, &quot;dimension8&quot;: null}, &quot;gaid&quot;: &quot;UA-24532603-1&quot;}" type="hidden"><input class="google-analytics-id-json" value="{&quot;dimensions&quot;: {&quot;dimension6&quot;: &quot;en&quot;, &quot;dimension4&quot;: &quot;YouTube Data API&quot;, &quot;dimension5&quot;: &quot;nl&quot;, &quot;dimension3&quot;: false, &quot;dimension1&quot;: &quot;Signed out&quot;, &quot;dimension8&quot;: null}, &quot;gaid&quot;: &quot;UA-49880327-1&quot;}" type="hidden">
+
+        
+          <div class="devsite-article-mask"></div>
+          <div class="devsite-site-mask"></div>
+          
+            
+  <nav style="left: -256px;" class="devsite-section-nav-responsive devsite-nav" tabindex="0">
+    <ul><li class="devsite-nav-item devsite-nav-active"><a href="https://developers.google.com/youtube/v3/getting-started" class="devsite-nav-title gc-analytics-event devsite-nav-active" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Overview</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/libraries" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Client Libraries</span></a></li><li class="devsite-nav-item devsite-nav-item-heading"><a class="devsite-nav-title devsite-nav-title-no-path " track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0"><span>Authorize Requests</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/authentication" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Overview</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/registering_an_application" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Get Auth Credentials</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/auth/server-side-web-apps" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Server-side Web Apps</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/auth/client-side-web-apps" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Client-side Web Apps</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/auth/installed-apps" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Installed Apps</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/auth/devices" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Devices</span></a></li><li class="devsite-nav-item devsite-nav-item-heading"><a class="devsite-nav-title devsite-nav-title-no-path " track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0"><span>Guides and Tutorials</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/uploading_a_video" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Upload a Video</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/using_resumable_upload_protocol" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Send Resumable Uploads</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/push_notifications" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Subscribe to Push Notifications</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/searching_by_topic" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Search with Freebase Topics</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/working_with_channel_ids" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Work with Channel IDs</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/moving_to_oauth" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Move from ClientLogin to OAuth</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/sample_requests" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Sample Requests</span></a></li><li class="devsite-nav-item devsite-nav-item-heading"><a class="devsite-nav-title devsite-nav-title-no-path " track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0"><span>Implementation and Migration Guide</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Overview</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/activities" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Activities</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/captions" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Captions</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/channels" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Channels (profiles)</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/comments" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Comments</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/favorites" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Favorites</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/pagination" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Pagination</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/partial" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Partial responses</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/playlists" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Playlists</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/ratings" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Ratings</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/search" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Search requests</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/subscriptions" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Subscriptions</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/videos" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Videos</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/new_in_v3" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>New features</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/deprecated" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Deprecated</span></a></li><li class="devsite-nav-item devsite-nav-item-heading"><a class="devsite-nav-title devsite-nav-title-no-path " track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0"><span>Tools</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/determine_quota_cost" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span>Quota Calculator</span></a></li><li class="devsite-nav-item devsite-nav-external devsite-nav-has-status"><a href="https://developers.google.com/apis-explorer/#p/youtube/v3/" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Hamburger menu" data-action="Link Click"><span class="devsite-nav-text"><span>APIs Explorer</span></span><span class="devsite-nav-icon-wrapper"><span data-title="Extern" aria-label="Extern" data-tooltip="Extern" data-tooltip-align="b,c" class="devsite-nav-icon material-icons"></span></span></a></li></ul>
+  </nav>
+
+          
+          <div style="margin-top: 264px;" class="devsite-main-content clearfix">
+
+          
+          
+
+          
+  
+  
+    
+    
+      
+  <nav style="left: auto; max-height: 499px; position: fixed; top: 128px;" class="devsite-section-nav devsite-nav">
+    <ul><li class="devsite-nav-item devsite-nav-active"><a href="https://developers.google.com/youtube/v3/getting-started" class="devsite-nav-title gc-analytics-event devsite-nav-active" track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Overview</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/libraries" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Client Libraries</span></a></li><li class="devsite-nav-item devsite-nav-item-heading"><a class="devsite-nav-title devsite-nav-title-no-path " track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0"><span>Authorize Requests</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/authentication" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Overview</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/registering_an_application" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Get Auth Credentials</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/auth/server-side-web-apps" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Server-side Web Apps</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/auth/client-side-web-apps" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Client-side Web Apps</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/auth/installed-apps" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Installed Apps</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/auth/devices" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Devices</span></a></li><li class="devsite-nav-item devsite-nav-item-heading"><a class="devsite-nav-title devsite-nav-title-no-path " track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0"><span>Guides and Tutorials</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/uploading_a_video" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Upload a Video</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/using_resumable_upload_protocol" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Send Resumable Uploads</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/push_notifications" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Subscribe to Push Notifications</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/searching_by_topic" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Search with Freebase Topics</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/working_with_channel_ids" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Work with Channel IDs</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/moving_to_oauth" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Move from ClientLogin to OAuth</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/sample_requests" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="0" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Sample Requests</span></a></li><li class="devsite-nav-item devsite-nav-item-heading"><a class="devsite-nav-title devsite-nav-title-no-path " track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0"><span>Implementation and Migration Guide</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Overview</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/activities" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Activities</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/captions" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Captions</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/channels" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Channels (profiles)</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/comments" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Comments</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/favorites" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Favorites</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/pagination" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Pagination</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/partial" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Partial responses</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/playlists" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Playlists</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/ratings" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Ratings</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/search" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Search requests</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/subscriptions" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Subscriptions</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/videos" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Videos</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/new_in_v3" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>New features</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/guides/implementation/deprecated" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Deprecated</span></a></li><li class="devsite-nav-item devsite-nav-item-heading"><a class="devsite-nav-title devsite-nav-title-no-path " track-type="leftNav" track-name="expandNavSectionNoLink" track-metadata-position="0"><span>Tools</span></a></li><li class="devsite-nav-item"><a href="https://developers.google.com/youtube/v3/determine_quota_cost" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span>Quota Calculator</span></a></li><li class="devsite-nav-item devsite-nav-external devsite-nav-has-status"><a href="https://developers.google.com/apis-explorer/#p/youtube/v3/" class="devsite-nav-title gc-analytics-event " track-type="leftNav" track-name="titleLink" track-metadata-position="1" data-category="Site-Wide Custom Events" data-label="Left nav" data-action="click"><span class="devsite-nav-text"><span>APIs Explorer</span></span><span class="devsite-nav-icon-wrapper"><span data-title="Extern" aria-label="Extern" data-tooltip="Extern" data-tooltip-align="b,c" class="devsite-nav-icon material-icons"></span></span></a></li></ul>
+  </nav>
+
+    
+
+    
+  <nav style="left: 1078.67px; max-height: 499px; position: fixed; top: 128px;" class="devsite-page-nav devsite-nav"><ul class="devsite-page-nav-list"><li class="devsite-nav-item devsite-nav-item-heading"><a href="#top_of_page" class="devsite-nav-title"><span>Inhoudsopgave</span></a></li><li class="devsite-nav-item"><a href="#intro" class="devsite-nav-title"><span>Introduction</span></a><ul class="devsite-page-nav-list"><li class="devsite-nav-item"><a href="#before-you-start" class="devsite-nav-title"><span>Before you start</span></a></li></ul></li><li class="devsite-nav-item"><a href="#resources" class="devsite-nav-title"><span>Resources and resource types</span></a><ul class="devsite-page-nav-list"><li class="devsite-nav-item"><a href="#supported-operations" class="devsite-nav-title"><span>Supported operations</span></a></li></ul></li><li class="devsite-nav-item"><a href="#quota" class="devsite-nav-title"><span>Quota usage</span></a></li><li class="devsite-nav-item"><a href="#partial" class="devsite-nav-title"><span>Partial resources</span></a><ul class="devsite-page-nav-list"><li class="devsite-nav-item"><a href="#part" class="devsite-nav-title"><span>How to use the part parameter</span></a></li><li class="devsite-nav-item"><a href="#fields" class="devsite-nav-title"><span>How to use the fields parameter</span></a></li><li class="devsite-nav-item"><a href="#Sample_Partial_Requests" class="devsite-nav-title"><span>Sample partial requests</span></a></li></ul></li><li class="devsite-nav-item"><a href="#performance" class="devsite-nav-title"><span>Optimizing performance</span></a><ul class="devsite-page-nav-list"><li class="devsite-nav-item"><a href="#etags" class="devsite-nav-title"><span>Using ETags</span></a></li><li class="devsite-nav-item"><a href="#gzip" class="devsite-nav-title"><span>Using gzip</span></a></li></ul></li></ul></nav>
+
+
+      <article class="devsite-article">
+        <div class="devsite-article-inner">
+  
+          
+  
+
+
+
+  
+  <div class="devsite-expand-section-nav-container">
+  
+    <button type="button" class="devsite-expand-section-nav button-flat material-icons"></button>
+  
+  
+  <h1 itemprop="name" class="devsite-page-title">
+    YouTube Data API Overview
+  </h1>
+  
+  </div>
+  
+    <nav class="devsite-page-nav-embedded devsite-nav"><ul class="devsite-page-nav-list"><li class="devsite-nav-item devsite-nav-item-heading"><a href="#top_of_page" class="devsite-nav-title"><span>Inhoudsopgave</span></a><button data-title="Expand/collapse contents" aria-label="Expand/collapse contents" data-tooltip="Expand/collapse contents" data-tooltip-align="b,c" type="button" class="devsite-nav-show-all button-transparent material-icons"></button></li><li class="devsite-nav-item"><a href="#intro" class="devsite-nav-title"><span>Introduction</span></a><ul class="devsite-page-nav-list"><li class="devsite-nav-item"><a href="#before-you-start" class="devsite-nav-title"><span>Before you start</span></a></li></ul></li><li class="devsite-nav-item"><a href="#resources" class="devsite-nav-title"><span>Resources and resource types</span></a><ul class="devsite-page-nav-list"><li class="devsite-nav-item"><a href="#supported-operations" class="devsite-nav-title"><span>Supported operations</span></a></li></ul></li><li class="devsite-nav-item"><a href="#quota" class="devsite-nav-title devsite-nav-item-hidden"><span>Quota usage</span></a></li><li class="devsite-nav-item"><a href="#partial" class="devsite-nav-title devsite-nav-item-hidden"><span>Partial resources</span></a><ul class="devsite-page-nav-list"><li class="devsite-nav-item"><a href="#part" class="devsite-nav-title devsite-nav-item-hidden"><span>How to use the part parameter</span></a></li><li class="devsite-nav-item"><a href="#fields" class="devsite-nav-title devsite-nav-item-hidden"><span>How to use the fields parameter</span></a></li><li class="devsite-nav-item"><a href="#Sample_Partial_Requests" class="devsite-nav-title devsite-nav-item-hidden"><span>Sample partial requests</span></a></li></ul></li><li class="devsite-nav-item"><a href="#performance" class="devsite-nav-title devsite-nav-item-hidden"><span>Optimizing performance</span></a><ul class="devsite-page-nav-list"><li class="devsite-nav-item"><a href="#etags" class="devsite-nav-title devsite-nav-item-hidden"><span>Using ETags</span></a></li><li class="devsite-nav-item"><a href="#gzip" class="devsite-nav-title devsite-nav-item-hidden"><span>Using gzip</span></a></li></ul></li><li class="devsite-nav-title devsite-more-items"><span>.<wbr>.<wbr>.<wbr></span></li></ul></nav>
+  
+  <div class="devsite-article-body clearfix" itemprop="articleBody">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="intro">Introduction</h2>
+
+<p>This document is intended for developers who want to write 
+applications that interact with YouTube. It explains basic concepts of 
+YouTube and of the API itself. It also provides an overview of the 
+different functions that the API supports.</p>
+
+<h3 id="before-you-start">Before you start</h3>
+
+
+<div class="video-wrapper">
+  <iframe src="YouTube%20Data%20API%20Overview%20%C2%A0_%C2%A0%20YouTube%20Data%20API%20%C2%A0_%C2%A0%20Google%20Developers_bestanden/Im69kzhpR3I.htm" allowfullscreen="" frameborder="0"></iframe>
+</div>
+
+
+<ol>
+  <li>
+    <p>You need a <a href="https://www.google.com/accounts/NewAccount">Google Account</a> to access the Google Developers Console, request an API key, and register your application.</p>
+  </li>
+  <li>
+    <p>Create a project in the <a href="https://console.developers.google.com/">Google Developers Console</a> and <a href="https://developers.google.com/youtube/registering_an_application">obtain authorization credentials</a> so your application can submit API requests.</p>
+  </li>
+  <li>
+    <p>After creating your project, make sure the YouTube Data API is one of the services that your application is registered to use:</p>
+    <p></p><ol>
+      <li>Go to the <a href="https://console.developers.google.com/">Developers Console</a> and select the project that you just registered.</li>
+      <li>
+
+
+
+
+<a href="https://console.developers.google.com/project/_/apiui/apis/library">Open the API Library</a> in the Google Developers Console. If prompted, select a
+project or create a new one.
+
+  
+
+
+
+    In the list of APIs, make sure the status is <b>ON</b> for the <b>YouTube Data API v3</b>.
+  
+
+</li>
+    </ol><p></p>
+  </li>
+  <li>
+    <p>If your application will use any API methods that require user authorization, read the <a href="https://developers.google.com/youtube/v3/guides/authentication">authentication</a> guide to learn how to implement OAuth 2.0 authorization.</p>
+  </li>
+  <li>
+    <p>Select a <a href="https://developers.google.com/youtube/v3/libraries">client library</a> to simplify your API implementation.</p>
+  </li>
+  <li>
+    <p>Familiarize yourself with the core concepts of the JSON 
+(JavaScript Object Notation) data format. JSON is a common, 
+language-independent data format that provides a simple text 
+representation of arbitrary data structures. For more information, see <a href="http://json.org/">json.org</a>.</p>
+  </li>
+</ol>
+
+<h2 id="resources">Resources and resource types</h2>
+
+<p>A resource is an individual data entity with a unique identifier. The
+ table below describes the different types of resources that you can 
+interact with using the API.</p>
+
+<div class="devsite-table-wrapper"><table class="responsive">
+  <tbody><tr>
+    <th colspan="2">Resources</th>
+  </tr>
+  <tr>
+    <td><code><span>activity</span></code></td>
+    <td>Contains information about an action that a particular user has 
+taken on the YouTube site. User actions that are reported in activity 
+feeds include rating a video, sharing a video, marking a video as a 
+favorite, and posting a channel bulletin, among others.</td>
+  </tr>
+  <tr>
+    <td><code><span>channel</span></code></td>
+    <td>Contains information about a single YouTube channel.</td>
+  </tr>
+  <tr>
+    <td><code><span>channelBanner</span></code></td>
+    <td>Identifies the URL to use to set a newly uploaded image as the banner image for a channel.</td>
+  </tr>
+  <tr>
+    <td><code><span>channelSection</span></code></td>
+    <td>Contains information about a set of videos that a channel has 
+chosen to feature. For example, a section could feature a channel's 
+latest uploads, most popular uploads, or videos from one or more 
+playlists.</td>
+  </tr>
+  <tr>
+    <td><code><span>guideCategory</span></code></td>
+    <td>Identifies a category that YouTube associates with channels 
+based on their content or other indicators, such as popularity. Guide 
+categories seek to organize channels in a way that makes it easier for 
+YouTube users to find the content they're looking for. While channels 
+could be associated with one or more guide categories, they are not 
+guaranteed to be in any guide categories.</td>
+  </tr>
+  <tr>
+    <td><code><span>i18nLanguage</span></code></td>
+    <td>Identifies an application language that the YouTube website 
+supports. The application language can also be referred to as a UI 
+language.</td>
+  </tr>
+  <tr>
+    <td><code><span>i18nRegion</span></code></td>
+    <td>Identifies a geographic area that a YouTube user can select as 
+the preferred content region. The content region can also be referred to
+ as a content locale.</td>
+  </tr>
+  <tr>
+    <td><code><span>playlist</span></code></td>
+    <td>Represents a single YouTube playlist. A playlist is a collection
+ of videos that can be viewed sequentially and shared with other users.</td>
+  </tr>
+  <tr>
+    <td><code><span>playlistItem</span></code></td>
+    <td>Identifies a resource, such as a video, that is part of a 
+playlist. The playlistItem resource also contains details that explain 
+how the included resource is used in the playlist.</td>
+  </tr>
+  <tr>
+    <td><code><span>search result</span></code></td>
+    <td>Contains information about a YouTube video, channel, or playlist
+ that matches the search parameters specified in an API request. While a
+ search result points to a uniquely identifiable resource, like a video,
+ it does not have its own persistent data.</td>
+  </tr>
+  <tr>
+    <td><code><span>subscription</span></code></td>
+    <td>Contains information about a YouTube user subscription. A 
+subscription notifies a user when new videos are added to a channel or 
+when another user takes one of several actions on YouTube, such as 
+uploading a video, rating a video, or commenting on a video.</td>
+  </tr>
+  <tr>
+    <td><code><span>thumbnail</span></code></td>
+    <td>Identifies thumbnail images associated with a resource.</td>
+  </tr>
+  <tr>
+    <td><code><span>video</span></code></td>
+    <td>Represents a single YouTube video.</td>
+  </tr>
+  <tr>
+    <td><code><span>videoCategory</span></code></td>
+    <td>Identifies a category that has been or could be associated with uploaded videos.</td>
+  </tr>
+  <tr>
+    <td><code><span>watermark</span></code></td>
+    <td>Identifies an image that displays during playbacks of a 
+specified channel's videos. The channel owner can also specify a target 
+channel to which the image links as well as timing details that 
+determine when the watermark appears during video playbacks and then 
+length of time it is visible.</td>
+  </tr>
+</tbody></table></div>
+
+<p>Note that, in many cases, a resource contains references to other resources. For example, a <code>playlistItem</code> resource's <code>snippet.resourceId.videoId</code>
+ property identifies a video resource that, in turn, contains complete 
+information about the video. As another example, a search result 
+contains either a <code>videoId</code>, <code>playlistId</code>, or <code>channelId</code> property that identifies a particular video, playlist, or channel resource.</p>
+
+<h3 id="supported-operations">Supported operations</h3>
+
+<p>The following table shows the most common methods that the API 
+supports. Some resources also support other methods that perform 
+functions more specific to those resources. For example, the <code>videos.rate</code> method associates a user rating with a video, and the <code>thumbnails.set</code> method uploads a video thumbnail image to YouTube and associates it with a video.</p>
+
+<div class="devsite-table-wrapper"><table class="responsive">
+  <tbody><tr>
+    <th colspan="2">Operations</th>
+  </tr>
+  <tr>
+    <td><code><span>list</span></code></td>
+    <td>Retrieves (<code><span>GET</span></code>) a list of zero or more resources.</td>
+  </tr>
+  <tr>
+    <td><code><span>insert</span></code></td>
+    <td>Creates (<code><span>POST</span></code>) a new resource.</td>
+  </tr>
+  <tr>
+    <td><code><span>update</span></code></td>
+    <td>Modifies (<code><span>PUT</span></code>) an existing resource to reflect data in your request.</td>
+  </tr>
+  <tr>
+    <td><code><span>delete</span></code></td>
+    <td>Removes (<code><span>DELETE</span></code>) a specific resource.</td>
+  </tr>
+</tbody></table></div>
+
+<p>The API currently supports methods to list each of the supported 
+resource types, and it supports write operations for many resources as 
+well.</p>
+
+<p>The table below identifies the operations that are supported for 
+different types of resources. Operations that insert, update, or delete 
+resources always require <a href="https://developers.google.com/youtube/v3/guides/authentication">user authorization</a>. In some cases, <code>list</code>
+ methods support both authorized and unauthorized requests, where 
+unauthorized requests only retrieve public data while authorized 
+requests can also retrieve information about or private to the currently
+ authenticated user.</p>
+
+<div class="devsite-table-wrapper"><table wborder="1">
+  <thead>
+    <tr><th colspan="5">Supported Operations</th>
+  </tr></thead>
+  <tbody><tr>
+    <td></td>
+    <td><strong><span class="apimethod notranslate">list</span></strong></td>
+    <td><strong><span class="apimethod notranslate">insert</span></strong></td>
+    <td><strong><span class="apimethod notranslate">update</span></strong></td>
+    <td><strong><span class="apimethod notranslate">delete</span></strong></td>
+  </tr>
+  <tr>
+    <td><code><strong><span>activity</span></strong></code></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+  </tr>
+  <tr>
+    <td><code><strong><span>caption</span></strong></code></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-yes"></span></td>
+  </tr>
+  <tr>
+    <td><code><strong><span>channel</span></strong></code></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+  </tr>
+  <tr>
+    <td><code><strong><span>channelBanner</span></strong></code></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+  </tr>
+  <tr>
+    <td><code><strong><span>channelSection</span></strong></code></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-yes"></span></td>
+  </tr>
+  <tr>
+    <td><code><strong><span>comment</span></strong></code></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-yes"></span></td>
+  </tr>
+  <tr>
+    <td><code><strong><span>commentThread</span></strong></code></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-no"></span></td>
+  </tr>
+  <tr>
+    <td><code><strong><span>guideCategory</span></strong></code></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+  </tr>
+  <tr>
+    <td><code><strong><span>i18nLanguage</span></strong></code></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+  </tr>
+  <tr>
+    <td><code><strong><span>i18nRegion</span></strong></code></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+  </tr>
+  <tr>
+    <td><code><strong><span>playlist</span></strong></code></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-yes"></span></td>
+  </tr>
+  <tr>
+    <td><code><strong><span>playlistItem</span></strong></code></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-yes"></span></td>
+  </tr>
+  <tr>
+    <td><code><strong><span>search result</span></strong></code></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+  </tr>
+  <tr>
+    <td><code><strong><span>subscription</span></strong></code></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+  </tr>
+  <tr>
+    <td><code><strong><span>thumbnail</span></strong></code></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+  </tr>
+  <tr>
+    <td><code><strong><span>video</span></strong></code></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-yes"></span></td>
+  </tr>
+  <tr>
+    <td><code><strong><span>videoCategory</span></strong></code></td>
+    <td><span class="compare-yes"></span></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+  </tr>
+  <tr>
+    <td><code><strong><span>watermark</span></strong></code></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+    <td><span class="compare-no"></span></td>
+  </tr>
+</tbody></table></div>
+
+<h2 id="quota">Quota usage</h2>
+
+<p>The <span class="notranslate">YouTube Data API</span> uses a quota to
+ ensure that developers use the service as intended and do not create 
+applications that unfairly reduce service quality or limit access for 
+others. All API requests, including invalid requests, incur at least a 
+one-point quota cost. You can find the quota available to your 
+application in the <a class="notranslate" href="https://console.developers.google.com/">Developers Console</a>.</p>
+
+<p>Google calculates your quota usage by assigning a cost to each 
+request, but the cost is not the same for each request. Two primary 
+factors influence a request's quota cost:</p>
+
+<ol>
+  <li>
+    <p>Different types of operations have different quota costs.</p>
+    <p></p><ul>
+      <li>A simple read operation that only retrieves the ID of each returned resource has a cost of approximately <code>1</code> unit.</li>
+      <li>A write operation has a cost of approximately <code>50</code> units.</li>
+      <li>A video upload has a cost of approximately <code>1600</code> units.</li>
+    </ul><p></p>
+  </li>
+  <li>
+    <p>Read and write operations use different amounts of quota 
+depending on the number of resource parts that each request retrieves. 
+Note that <code>insert</code> and <code>update</code> operations write 
+data and also return a resource. So, for example, inserting a playlist 
+has a quota cost of 50 units for the write operation plus the cost of 
+the returned playlist resource.</p>
+    <p>As discussed in the following section, each API resource is divided into parts. For example, a <code>playlist</code> resource has two parts, <code>snippet</code> and <code>status</code>, while a <code>channel</code> resource has six parts and a <code>video</code>
+ resource has 10. Each part contains a group of related properties, and 
+the groups are designed so that your application only needs to retrieve 
+the types of data that it actually uses.</p>
+    <p>An API request that returns resource data must specify the 
+resource parts that the request retrieves. Each part then adds 
+approximately <code>2</code> units to the request's quota cost. As such, a <code>videos.list</code> request that only retrieves the <code>snippet</code> part for each video might have a cost of <code>3</code> units. However, a <code>videos.list</code> request that retrieves all of the parts for each resource might have a cost of around <code>21</code> quota units.</p>
+  </li>
+</ol>
+
+<p>With these rules in mind, you can estimate the number of read, write,
+ or upload requests that your application could send per day without 
+exceeding your quota. For example, if you have a daily quota of 
+5,000,000 units, your application could have any of the following 
+approximate limits:</p>
+
+<p></p><ul>
+  <li>1,000,000 read operations that each retrieve two resource parts.</li>
+  <li>50,000 write operations and 450,000 additional read operations that each retrieve two resource parts.</li>
+  <li>2000 video uploads, 7000 write operations, and 200,000 read operations that each retrieve three resource parts.</li>
+</ul><p></p>
+
+<p class="special"><strong>Important:</strong> Only retrieving the 
+resource parts that your application needs conserves your daily quota 
+and make the entire system more efficient.</p>
+
+<h2 id="partial">Partial resources</h2>
+
+<p>The API allows, and actually requires, the retrieval of partial 
+resources so that applications avoid transferring, parsing, and storing 
+unneeded data. This approach also ensures that the API uses network, <span class="notranslate">CPU</span>, and memory resources more efficiently.</p>
+
+<p>The API supports two request parameters, which are explained in the 
+following sections, that enable you to identify the resource properties 
+that should be included in API responses.</p>
+
+<p></p><ul>
+  <li>The <code><a href="#part">part</a></code> parameter identifies groups of properties that should be returned for a resource.</li>
+  <li>The <code><a href="#fields">fields</a></code> parameter filters the API response to only return specific properties within the requested resource parts.</li>
+</ul><p></p>
+
+<h3 id="part">How to use the <code>part</code> parameter</h3>
+
+<p>The <code>part</code> parameter is a required parameter for any API 
+request that retrieves or returns a resource. The parameter identifies 
+one or more top-level (non-nested) resource properties that should be 
+included in an API response. For example, a <code><a href="https://developers.google.com/youtube/v3/docs/videos#resource">video</a></code> resource has the following parts:</p>
+
+<ul style="list-style-type:none">
+  <li><code>snippet</code></li>
+  <li><code>contentDetails</code></li>
+  <li><code>fileDetails</code></li>
+  <li><code>player</code></li>
+  <li><code>processingDetails</code></li>
+  <li><code>recordingDetails</code></li>
+  <li><code>statistics</code></li>
+  <li><code>status</code></li>
+  <li><code>suggestions</code></li>
+  <li><code>topicDetails</code></li>
+</ul>
+
+<p>All of these parts are objects that contain nested properties, and 
+you can think of these objects as groups of metadata fields that the API
+ server might (or might not) retrieve. As such, the <code>part</code> 
+parameter requires you to select the resource components that your 
+application actually uses. This requirement serves several purposes:</p>
+
+<ul>
+  <li>It lets you manage your API quota usage. If you increase the 
+number of parts you retrieve in API responses, your API usage increases 
+accordingly, and your available quota decreases.</li>
+  <li>It reduces latency by preventing the API server from spending time retrieving metadata fields that your application doesn't use.</li>
+  <li>It reduces bandwidth usage by reducing (or eliminating) the amount of unnecessary data that your application might retrieve.</li>
+</ul>
+
+<p>Over time, as resources add more parts, these benefits will only 
+increase since your application will not be requesting newly introduced 
+properties that it doesn't support.</p>
+
+<h3 id="fields">How to use the <code>fields</code> parameter</h3>
+
+<p>The <code>fields</code> parameter filters the API response, which only contains the resource parts identified in the <code>part</code> parameter value, so that the response only includes a specific set of fields. The <code>fields</code> parameter lets you remove nested properties from an API response and thereby further reduce your bandwidth usage. (The <code>part</code> parameter cannot be used to filter nested properties from a response.)</p>
+
+<p>The following rules explain the supported syntax for the <code>fields</code> parameter value, which is loosely based on <span class="notranslate">XPath</span> syntax:</p>
+
+<p></p><ul>
+  <li>Use a comma-separated list (<code>fields=a,b</code>) to select multiple fields.</li>
+  <li>Use an asterisk (<code>fields=*</code>) as a wildcard to identify all fields.</li>
+  <li>Use parentheses (<code>fields=a(b,c)</code>) to specify a group of nested properties that will be included in the API response.</li>
+  <li>Use a forward slash (<code>fields=a/b</code>) to identify a nested property.</li>
+</ul><p></p>
+
+<p>In practice, these rules often allow several different <code>fields</code>
+ parameter values to retrieve the same API response. For example, if you
+ want to retrieve the playlist item ID, title, and position for every 
+item in a playlist, you could use any of the following values:</p>
+
+<p></p><ul>
+  <li><code>fields=items/id,playlistItems/snippet/title,playlistItems/snippet/position</code></li>
+  <li><code>fields=items(id,snippet/title,snippet/position)</code></li>
+  <li><code>fields=items(id,snippet(title,position))</code></li>
+</ul><p></p>
+
+<p class="note"><strong>Note:</strong> As with all query parameter values, the <code>fields</code> parameter value must be URL encoded. For better readability, the examples in this document omit the encoding.</p>
+
+<h3 id="Sample_Partial_Requests">Sample partial requests</h3>
+
+<p>The examples below demonstrate how you can use the <code>part</code> and <code>fields</code> parameters to ensure that API responses only include the data that your application uses:</p>
+
+<ol>
+  <li>Example 1 returns a video resource that includes four parts as well as <code>kind</code> and <code>etag</code> properties.</li>
+  <li>Example 2 returns a video resource that includes two parts as well as <code>kind</code> and <code>etag</code> properties.</li>
+  <li>Example 3 returns a video resource that includes two parts but excludes <code>kind</code> and <code>etag</code> properties.</li>
+  <li>Example 4 returns a video resource that includes two parts but excludes <code>kind</code> and <code>etag</code> as well as some nested properties in the resource's <code>snippet</code> object.</li>
+</ol>
+
+<section class="kd-tabbed-horz" id="partial-examples"><div class="kd-buttonbar kd-tabbar-horz"><header data-ds-scope="code" class="kd-tabbutton selected">Example 1</header><header data-ds-scope="code" class="kd-tabbutton">Example 2</header><header data-ds-scope="code" class="kd-tabbutton">Example 3</header><header data-ds-scope="code" class="kd-tabbutton">Example 4</header><a style="display: none;" class="devsite-overflow-menu-button kd-tabbutton">Meer</a></div>
+  <article style="display: block;" class="selected">
+    
+
+
+
+
+<pre class="prettyprint lang-proto devsite-code-highlight"><div data-title="Klik om te kopiëren" aria-label="Klik om te kopiëren" data-tooltip="Klik om te kopiëren" data-tooltip-align="b,c" class="devsite-click-to-copy-button gc-analytics-event material-icons" data-category="Site-Wide Custom Events" data-label="Click To Copy" track-type="exampleCode" track-name="clickToCopy"></div><strong><span class="pln">URL</span><span class="pun">:</span></strong><span class="pln"> </span><span class="notranslate"><span class="pln">https</span><span class="pun">:</span><span class="com">//www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&amp;key=</span><span aria-label="Klik om uw referenties in te voegen" data-tooltip="Klik om uw referenties in te voegen" data-tooltip-align="b,c" class="replaceable-credential"><var><span class="com">YOUR_API_KEY</span></var></span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="pun">&amp;</span><span class="pln">part</span><span class="pun">=</span><span class="pln">snippet</span><span class="pun">,</span><span class="pln">contentDetails</span><span class="pun">,</span><span class="pln">statistics</span><span class="pun">,</span><span class="pln">status</span></span><span class="pln"><br><br></span><strong><span class="typ">Description</span><span class="pun">:</span></strong><span class="pln"> </span><span class="typ">This</span><span class="pln"> example retrieves a </span><code><span class="pln">video</span></code><span class="pln"> resource and identifies several<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;resource parts that should be included in the API response</span><span class="pun">.</span><span class="pln"><br><br></span><strong><span class="pln">API response</span><span class="pun">:</span></strong><span class="pln"><br></span><div class="notranslate"><span class="pln"><br></span><span class="pun">{</span><span class="pln"><br>&nbsp;</span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"youtube#videoListResponse"</span><span class="pun">,</span><span class="pln"><br>&nbsp;</span><span class="str">"etag"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"\"UCBpFjp2h75_b92t44sqraUcyu0/sDAlsG9NGKfr6v5AlPZKSEZdtqA\""</span><span class="pun">,</span><span class="pln"><br>&nbsp;</span><span class="str">"videos"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"7lCDEYXw3mM"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"youtube#video"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="str">"etag"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"\"UCBpFjp2h75_b92t44sqraUcyu0/iYynQR8AtacsFUwWmrVaw4Smb_Q\""</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="str">"snippet"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"publishedAt"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2012-06-20T22:45:24.000Z"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"channelId"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"UC_x5XG1OV2P6uZZ5FSM9Ttw"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"title"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Google I/O 101: Q&amp;A On Using Google APIs"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"description"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Antonio Fuentes speaks to us and takes questions on working with Google APIs and OAuth 2.0."</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"thumbnails"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="str">"default"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="str">"url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"https://i.ytimg.com/vi/7lCDEYXw3mM/default.jpg"</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="pun">},</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="str">"medium"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="str">"url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"https://i.ytimg.com/vi/7lCDEYXw3mM/mqdefault.jpg"</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="pun">},</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="str">"high"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="str">"url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"https://i.ytimg.com/vi/7lCDEYXw3mM/hqdefault.jpg"</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="pun">},</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"categoryId"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"28"</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="pun">},</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="str">"contentDetails"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"duration"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"PT15M51S"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"aspectRatio"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"RATIO_16_9"</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="pun">},</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="str">"statistics"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"viewCount"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"3057"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"likeCount"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"25"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"dislikeCount"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"0"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"favoriteCount"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"17"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"commentCount"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"12"</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="pun">},</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="str">"status"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"uploadStatus"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"STATUS_PROCESSED"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"privacyStatus"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"PRIVACY_PUBLIC"</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="pun">}</span><span class="pln"><br>&nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp;</span><span class="pun">]</span><span class="pln"><br></span><span class="pun">}</span><span class="pln"><br></span></div></pre>
+  </article>
+  <article>
+    
+
+
+<pre class="prettyprint lang-proto devsite-code-highlight"><div data-title="Klik om te kopiëren" aria-label="Klik om te kopiëren" data-tooltip="Klik om te kopiëren" data-tooltip-align="b,c" class="devsite-click-to-copy-button gc-analytics-event material-icons" data-category="Site-Wide Custom Events" data-label="Click To Copy" track-type="exampleCode" track-name="clickToCopy"></div><strong><span class="pln">URL</span><span class="pun">:</span></strong><span class="pln"> </span><span class="notranslate"><span class="pln">https</span><span class="pun">:</span><span class="com">//www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&amp;key=</span><span aria-label="Klik om uw referenties in te voegen" data-tooltip="Klik om uw referenties in te voegen" data-tooltip-align="b,c" class="replaceable-credential"><var><span class="com">YOUR_API_KEY</span></var></span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="pun">&amp;</span><span class="pln">part</span><span class="pun">=</span><span class="pln">snippet</span><span class="pun">,</span><span class="pln">statistics</span></span><span class="pln"><br><br></span><strong><span class="typ">Description</span><span class="pun">:</span></strong><span class="pln"> </span><span class="typ">This</span><span class="pln"> example modifies the </span><code><span class="pln">part</span></code><span class="pln"> parameter value so that the<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><code><span class="pln">contentDetails</span></code><span class="pln"> and </span><code><span class="pln">status</span></code><span class="pln"> properties are not included<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;in the response</span><span class="pun">.</span><span class="pln"><br><br></span><strong><span class="pln">API response</span><span class="pun">:</span></strong><span class="pln"><br></span><div class="notranslate"><span class="pln"><br></span><span class="pun">{</span><span class="pln"><br>&nbsp;</span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"youtube#videoListResponse"</span><span class="pun">,</span><span class="pln"><br>&nbsp;</span><span class="str">"etag"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"\"UCBpFjp2h75_b92t44sqraUcyu0/sDAlsG9NGKfr6v5AlPZKSEZdtqA\""</span><span class="pun">,</span><span class="pln"><br>&nbsp;</span><span class="str">"videos"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"7lCDEYXw3mM"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="str">"kind"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"youtube#video"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="str">"etag"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"\"UCBpFjp2h75_b92t44sqraUcyu0/iYynQR8AtacsFUwWmrVaw4Smb_Q\""</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="str">"snippet"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"publishedAt"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2012-06-20T22:45:24.000Z"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"channelId"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"UC_x5XG1OV2P6uZZ5FSM9Ttw"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"title"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Google I/O 101: Q&amp;A On Using Google APIs"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"description"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Antonio Fuentes speaks to us and takes questions on working with Google APIs and OAuth 2.0."</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"thumbnails"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="str">"default"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="str">"url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"https://i.ytimg.com/vi/7lCDEYXw3mM/default.jpg"</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="pun">},</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="str">"medium"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="str">"url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"https://i.ytimg.com/vi/7lCDEYXw3mM/mqdefault.jpg"</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="pun">},</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="str">"high"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="str">"url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"https://i.ytimg.com/vi/7lCDEYXw3mM/hqdefault.jpg"</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="pun">},</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"categoryId"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"28"</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="pun">},</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="str">"statistics"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"viewCount"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"3057"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"likeCount"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"25"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"dislikeCount"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"0"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"favoriteCount"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"17"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"commentCount"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"12"</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="pun">}</span><span class="pln"><br>&nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp;</span><span class="pun">]</span><span class="pln"><br></span><span class="pun">}</span><span class="pln"><br></span></div></pre>
+  </article>
+  <article>
+    
+
+<pre class="prettyprint lang-proto devsite-code-highlight"><div data-title="Klik om te kopiëren" aria-label="Klik om te kopiëren" data-tooltip="Klik om te kopiëren" data-tooltip-align="b,c" class="devsite-click-to-copy-button gc-analytics-event material-icons" data-category="Site-Wide Custom Events" data-label="Click To Copy" track-type="exampleCode" track-name="clickToCopy"></div><strong><span class="pln">URL</span><span class="pun">:</span></strong><span class="pln"> </span><span class="notranslate"><span class="pln">https</span><span class="pun">:</span><span class="com">//www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&amp;key=</span><span aria-label="Klik om uw referenties in te voegen" data-tooltip="Klik om uw referenties in te voegen" data-tooltip-align="b,c" class="replaceable-credential"><var><span class="com">YOUR_API_KEY</span></var></span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="pun">&amp;</span><span class="pln">part</span><span class="pun">=</span><span class="pln">snippet</span><span class="pun">,</span><span class="pln">statistics</span><span class="pun">&amp;</span><span class="pln">fields</span><span class="pun">=</span><span class="pln">items</span><span class="pun">(</span><span class="pln">id</span><span class="pun">,</span><span class="pln">snippet</span><span class="pun">,</span><span class="pln">statistics</span><span class="pun">)</span></span><span class="pln"><br><br></span><strong><span class="typ">Description</span><span class="pun">:</span></strong><span class="pln"> </span><span class="typ">This</span><span class="pln"> example adds the </span><code><span class="pln">fields</span></code><span class="pln"> parameter </span><span class="kwd">to</span><span class="pln"> remove all<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><code><span class="pln">kind</span></code><span class="pln"> and </span><code><span class="pln">etag</span></code><span class="pln"> properties from the API response</span><span class="pun">.</span><span class="pln"><br><br></span><strong><span class="pln">API response</span><span class="pun">:</span></strong><span class="pln"><br></span><div class="notranslate"><span class="pln"><br></span><span class="pun">{</span><span class="pln"><br>&nbsp;</span><span class="str">"videos"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"7lCDEYXw3mM"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="str">"snippet"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"publishedAt"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2012-06-20T22:45:24.000Z"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"channelId"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"UC_x5XG1OV2P6uZZ5FSM9Ttw"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"title"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Google I/O 101: Q&amp;A On Using Google APIs"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"description"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Antonio Fuentes speaks to us and takes questions on working with Google APIs and OAuth 2.0."</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"thumbnails"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="str">"default"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="str">"url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"https://i.ytimg.com/vi/7lCDEYXw3mM/default.jpg"</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="pun">},</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="str">"medium"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="str">"url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"https://i.ytimg.com/vi/7lCDEYXw3mM/mqdefault.jpg"</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="pun">},</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="str">"high"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="str">"url"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"https://i.ytimg.com/vi/7lCDEYXw3mM/hqdefault.jpg"</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="pun">}</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="pun">},</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"categoryId"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"28"</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="pun">},</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="str">"statistics"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"viewCount"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"3057"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"likeCount"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"25"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"dislikeCount"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"0"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"favoriteCount"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"17"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"commentCount"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"12"</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="pun">}</span><span class="pln"><br>&nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp;</span><span class="pun">]</span><span class="pln"><br></span><span class="pun">}</span><span class="pln"><br></span></div></pre>
+  </article>
+  <article>
+    
+
+<pre class="prettyprint lang-proto devsite-code-highlight"><div data-title="Klik om te kopiëren" aria-label="Klik om te kopiëren" data-tooltip="Klik om te kopiëren" data-tooltip-align="b,c" class="devsite-click-to-copy-button gc-analytics-event material-icons" data-category="Site-Wide Custom Events" data-label="Click To Copy" track-type="exampleCode" track-name="clickToCopy"></div><strong><span class="pln">URL</span><span class="pun">:</span></strong><span class="pln"> </span><span class="notranslate"><span class="pln">https</span><span class="pun">:</span><span class="com">//www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&amp;key=</span><span aria-label="Klik om uw referenties in te voegen" data-tooltip="Klik om uw referenties in te voegen" data-tooltip-align="b,c" class="replaceable-credential"><var><span class="com">YOUR_API_KEY</span></var></span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="pun">&amp;</span><span class="pln">fields</span><span class="pun">=</span><span class="pln">items</span><span class="pun">(</span><span class="pln">id</span><span class="pun">,</span><span class="pln">snippet</span><span class="pun">(</span><span class="pln">channelId</span><span class="pun">,</span><span class="pln">title</span><span class="pun">,</span><span class="pln">categoryId</span><span class="pun">),</span><span class="pln">statistics</span><span class="pun">)&amp;</span><span class="pln">part</span><span class="pun">=</span><span class="pln">snippet</span><span class="pun">,</span><span class="pln">statistics</span></span><span class="pln"><br><br></span><strong><span class="typ">Description</span><span class="pun">:</span></strong><span class="pln"> </span><span class="typ">This</span><span class="pln"> example modifies the </span><code><span class="pln">fields</span></code><span class="pln"> parameter from example </span><span class="lit">3</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;so that in the API response</span><span class="pun">,</span><span class="pln"> each video resource</span><span class="str">'</span><span class="pln">s </span><code><span class="pln">snippet</span></code><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;object only includes the </span><code><span class="pln">channelId</span></code><span class="pun">,</span><span class="pln"> </span><code><span class="pln">title</span></code><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;and </span><code><span class="pln">categoryId</span></code><span class="pln"> properties</span><span class="pun">.</span><span class="pln"><br><br></span><strong><span class="pln">API response</span><span class="pun">:</span></strong><span class="pln"><br></span><div class="notranslate"><span class="pln"><br></span><span class="pun">{</span><span class="pln"><br>&nbsp;</span><span class="str">"videos"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln"><br>&nbsp; </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"7lCDEYXw3mM"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="str">"snippet"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"channelId"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"UC_x5XG1OV2P6uZZ5FSM9Ttw"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"title"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Google I/O 101: Q&amp;A On Using Google APIs"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"categoryId"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"28"</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="pun">},</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="str">"statistics"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"viewCount"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"3057"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"likeCount"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"25"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"dislikeCount"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"0"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"favoriteCount"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"17"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="str">"commentCount"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"12"</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="pun">}</span><span class="pln"><br>&nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp;</span><span class="pun">]</span><span class="pln"><br></span><span class="pun">}</span><span class="pln"><br></span></div></pre>
+  </article>
+</section>
+
+
+<h2 id="performance">Optimizing performance</h2>
+
+<section>
+<h3 id="etags">Using ETags</h3>
+<p><span class="notranslate">ETags</span>, a standard part of the <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.19">HTTP protocol</a>, allow applications to refer to a specific version of a particular API resource. The resource could be an entire feed or an item in that feed. This functionality supports the following use cases:</p>
+<ul>
+  <li>
+    <p><strong>Caching and conditional retrieval</strong> – Your application can cache API resources and their ETags. Then, when your application requests a stored resource again, it specifies the ETag associated with that resource. If the resource has changed, the API returns the modified resource and the ETag associated with that version of the resource. If the resource has not changed, the API returns an HTTP 304 response (<code>Not Modified</code>), which indicates that the resource has not changed. Your application can reduce latency and bandwidth usage by serving cached resources in this manner.</p>
+    <p>The client libraries for Google APIs differ in their support of ETags. For example, the JavaScript client library supports ETags via a whitelist for allowed request headers that includes <code>If-Match</code> and <code>If-None-Match</code>. The whitelist allows normal browser caching to occur so that if a resource's ETag has not changed, the resource can be served from the browser cache. The Obj-C client, on the other hand, does not support ETags.</p>
+  </li>
+  <li>
+    <p><strong>Protecting against inadvertent overwrites of changes</strong> – ETags help to ensure that multiple API clients don't inadvertently overwrite each other's changes. When updating or deleting a resource, your application can specify the resource's ETag. If the ETag doesn't match the most recent version of that resource, then the API request fails.</p>
+  </li>
+</ul>
+
+<p>Using ETags in your application provides several benefits:</p>
+
+<ul>
+
+  <li>The API responds more quickly to requests for cached but unchanged resources, yielding lower latency and lower bandwidth usage.</li>
+  <li>Your application will not inadvertently overwrite changes to a resource that were made from another API client.</li>
+</ul>
+
+<p>The <a class="notranslate" href="https://code.google.com/p/google-api-javascript-client/wiki/GettingStarted">Google APIs Client Library for JavaScript</a> supports <code>If-Match</code> and <code>If-None-Match</code> HTTP request headers, thereby enabling ETags to work within the context of normal browser caching.</p>
+
+</section>
+
+<section>
+<h3 id="gzip">Using gzip</h3>
+<p>You can also reduce the bandwidth needed for each API response by enabling gzip compression. While your application will need additional CPU time to uncompress API responses, the benefit of consuming fewer network resources usually outweighs that cost.</p>
+<p>To receive a gzip-encoded response you must do two things:</p>
+<p></p><ul>
+  <li>Set the <code>Accept-Encoding</code> HTTP request header to <code>gzip</code>.</li>
+  <li>Modify your user agent to contain the string <code>gzip</code>.</li>
+</ul><p></p>
+
+<p>The sample HTTP headers below demonstrate these requirements for enabling gzip compression:</p>
+<pre class="notranslate">Accept-Encoding: gzip
+User-Agent: my program (gzip)
+</pre>
+</section>
+
+  
+  </div>
+
+  
+        
+<div class="devsite-content-footer">
+  
+  
+  
+    <p>Except as otherwise noted, the content of this page is licensed under the <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>, and code samples are licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see our <a href="https://developers.google.com/site-policies">Site Policies</a>.</p>
+  
+
+  
+    
+    <p class="devsite-content-footer-date" itemprop="datePublished" content="2015-08-19T00:33:18.981560">
+      
+      Laatst bijgewerkt: augustus 19, 2015.
+    </p>
+  
+
+</div>
+
+        </div>
+      </article>
+  
+
+          </div>
+        
+
+<footer class="devsite-footer"><nav class="devsite-full-site-width"><ul class="devsite-footer-row"><li class="devsite-footer-promo devsite-footer-flex"><a href="http://apiblog.youtube.com/" class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Promo"><img class="devsite-footer-promo-icon" src="YouTube%20Data%20API%20Overview%20%C2%A0_%C2%A0%20YouTube%20Data%20API%20%C2%A0_%C2%A0%20Google%20Developers_bestanden/blogger_64dp.png">
+            
+            
+              Blog 
+            
+          </a><div class="devsite-footer-promo-description">The latest news on the YouTube API blog</div></li><li class="devsite-footer-promo devsite-footer-flex"><a href="https://github.com/youtube/api-samples" class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Promo"><img class="devsite-footer-promo-icon" src="YouTube%20Data%20API%20Overview%20%C2%A0_%C2%A0%20YouTube%20Data%20API%20%C2%A0_%C2%A0%20Google%20Developers_bestanden/logo-github.svg">
+            
+            
+              GitHub 
+            
+          </a><div class="devsite-footer-promo-description">Find API code samples and other YouTube open-source projects.</div></li><li class="devsite-footer-promo devsite-footer-flex"><a href="https://code.google.com/p/gdata-issues/issues/entry?template=YouTube%20%28Defect%20Report%29" class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Promo"><img class="devsite-footer-promo-icon" src="YouTube%20Data%20API%20Overview%20%C2%A0_%C2%A0%20YouTube%20Data%20API%20%C2%A0_%C2%A0%20Google%20Developers_bestanden/developers_64dp.png">
+            
+            
+              Issue Tracker 
+            
+          </a><div class="devsite-footer-promo-description">Something wrong? Send us a bug report!</div></li><li class="devsite-footer-promo devsite-footer-flex"><a href="http://stackoverflow.com/questions/ask?tags=youtube-api" class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Promo"><img class="devsite-footer-promo-icon" src="YouTube%20Data%20API%20Overview%20%C2%A0_%C2%A0%20YouTube%20Data%20API%20%C2%A0_%C2%A0%20Google%20Developers_bestanden/logo-stack-overflow.svg">
+            
+            
+              Stack Overflow 
+            
+          </a><div class="devsite-footer-promo-description">Ask a question under the youtube-api tag</div></li><li class="devsite-footer-promo devsite-footer-flex"><a href="https://www.youtube.com/user/YouTubeDev" class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Promo"><img class="devsite-footer-promo-icon" src="YouTube%20Data%20API%20Overview%20%C2%A0_%C2%A0%20YouTube%20Data%20API%20%C2%A0_%C2%A0%20Google%20Developers_bestanden/youtube_64dp.png">
+            
+            
+              Videos 
+            
+          </a><div class="devsite-footer-promo-description">Check out the YouTube Developer Relations team's YouTube channel</div></li></ul><ul class="devsite-footer-row"><li class="devsite-footer-linkbox devsite-footer-flex"><span class="devsite-footer-linkbox-icon material-icons">build</span><h3 class="devsite-footer-linkbox-heading hide-from-toc">Tools</h3><ul><li class="devsite-footer-linkbox-item"><a href="https://developers.google.com/apis-explorer/#p/" class="devsite-footer-linkbox-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox">
+                
+                  Google APIs Explorer 
+                
+              </a></li><li class="devsite-footer-linkbox-item"><a href="https://developers.google.com/youtube/youtube_player_demo" class="devsite-footer-linkbox-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox">
+                
+                  YouTube Player Demo 
+                
+              </a></li><li class="devsite-footer-linkbox-item"><a href="https://developers.google.com/youtube/youtube_subscribe_button" class="devsite-footer-linkbox-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox">
+                
+                  Configure a Subscribe Button 
+                
+              </a></li></ul></li><li class="devsite-footer-linkbox devsite-footer-flex"><span class="devsite-footer-linkbox-icon material-icons">bug_report</span><h3 class="devsite-footer-linkbox-heading hide-from-toc">Issue Tracker</h3><ul><li class="devsite-footer-linkbox-item"><a href="https://code.google.com/p/gdata-issues/issues/entry?template=YouTube%20%28Defect%20Report%29" class="devsite-footer-linkbox-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox">
+                
+                  File a bug 
+                
+              </a></li><li class="devsite-footer-linkbox-item"><a href="https://code.google.com/p/gdata-issues/issues/entry?template=YouTube%20%28Enhancement%20Request%29" class="devsite-footer-linkbox-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox">
+                
+                  Request a feature 
+                
+              </a></li><li class="devsite-footer-linkbox-item"><a href="https://code.google.com/p/gdata-issues/issues/list?q=label:API-YouTube" class="devsite-footer-linkbox-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox">
+                
+                  See open issues 
+                
+              </a></li></ul></li><li class="devsite-footer-linkbox devsite-footer-flex"><span class="devsite-footer-linkbox-icon material-icons">info</span><h3 class="devsite-footer-linkbox-heading hide-from-toc">Product Info</h3><ul><li class="devsite-footer-linkbox-item"><a href="https://developers.google.com/youtube/terms" class="devsite-footer-linkbox-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox">
+                
+                  Terms of Service 
+                
+              </a></li><li class="devsite-footer-linkbox-item"><a href="https://developers.google.com/youtube/branding_guidelines" class="devsite-footer-linkbox-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox">
+                
+                  Branding Guidelines 
+                
+              </a></li><li class="devsite-footer-linkbox-item"><a href="https://developers.google.com/youtube/creating_monetizable_applications" class="devsite-footer-linkbox-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox">
+                
+                  Monetization Guidelines 
+                
+              </a></li><li class="devsite-footer-linkbox-item"><a href="https://developers.google.com/youtube/youtube-api-list" class="devsite-footer-linkbox-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Content Page Footer Linkbox">
+                
+                  APIs subject to Deprecation Policy 
+                
+              </a></li></ul></li></ul></nav></footer><footer class="devsite-site-footer"><nav class="devsite-site-footer-nav devsite-nav devsite-full-site-width"><ul class="devsite-site-footer-column-list"><li class="devsite-site-footer-column"><ul class="devsite-site-footer-list"><li class="devsite-site-footer-item"><h3>Contact</h3></li><li class="devsite-site-footer-item"><a href="https://googledevelopers.blogspot.com/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Blog Link">Blog</a></li><li class="devsite-site-footer-item"><a href="https://www.facebook.com/pages/Google-Developers/967415219957038" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Facebook Link">Facebook</a></li><li class="devsite-site-footer-item"><a href="https://plus.google.com/+GoogleDevelopers/posts" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer G+ Link">Google+</a></li><li class="devsite-site-footer-item"><a href="https://medium.com/google-developers" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Medium Link">Medium</a></li><li class="devsite-site-footer-item"><a href="https://twitter.com/googledevs" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Twitter Link">Twitter</a></li><li class="devsite-site-footer-item"><a href="https://www.youtube.com/user/GoogleDevelopers" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer YouTube Link">YouTube</a></li></ul></li><li class="devsite-site-footer-column"><ul class="devsite-site-footer-list"><li class="devsite-site-footer-item"><h3>Programma's</h3></li><li class="devsite-site-footer-item"><a href="https://www.womentechmakers.com/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Women Techmakers">Women Techmakers</a></li><li class="devsite-site-footer-item"><a href="https://developers.google.com/agency/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Agency">Agency Program</a></li><li class="devsite-site-footer-item"><a href="https://developers.google.com/groups/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Groups">Google Developer Groups</a></li><li class="devsite-site-footer-item"><a href="https://developers.google.com/experts/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Experts">Google Developer Experts</a></li><li class="devsite-site-footer-item"><a href="https://developers.google.com/startups/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Startups">Startup Launchpad</a></li></ul></li><li class="devsite-site-footer-column"><ul class="devsite-site-footer-list"><li class="devsite-site-footer-item"><h3>Ontwikkelaarsconsoles</h3></li><li class="devsite-site-footer-item"><a href="https://console.developers.google.com/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Google Developers Console">Google Developers Console</a></li><li class="devsite-site-footer-item"><a href="https://play.google.com/apps/publish/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Play Developers Console">Google Play-console</a></li><li class="devsite-site-footer-item"><a href="https://cast.google.com/publish/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Cast SDK Developer Console">Cast SDK-console</a></li><li class="devsite-site-footer-item"><a href="https://chrome.google.com/webstore/developer/dashboard" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Chrome Web Store Developer Dashboard">Chrome Web Store-dashboard</a></li></ul></li><li class="devsite-site-footer-column"><ul class="devsite-site-footer-list"><li class="devsite-site-footer-item"><h3>Verkennen</h3></li><li class="devsite-site-footer-item"><a href="https://developers.google.com/android/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Android">Android</a></li><li class="devsite-site-footer-item"><a href="https://developers.google.com/ios/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer iOS">iOS</a></li><li class="devsite-site-footer-item"><a href="https://developers.google.com/web/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Web">Internet</a></li><li class="devsite-site-footer-item"><a href="https://developers.google.com/games/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Games">Games</a></li><li class="devsite-site-footer-item"><a href="https://developers.google.com/products/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Products">Alle producten</a></li><li class="devsite-site-footer-item"><a href="https://www.google.com/about/careers/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer more careers">Vacatures</a></li></ul></li></ul></nav></footer><footer class="devsite-utility-footer"><nav class="devsite-utility-footer-nav devsite-nav devsite-full-site-width"><span class="devsite-utility-footer-links"><a href="https://developers.google.com/site-terms/">Voorwaarden</a>
+      &nbsp; | &nbsp;
+      
+      <a href="https://www.google.com/intl/en/privacy/" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Privacy Link">Privacy</a></span><form class="devsite-utility-footer-language" id="setlang" action="/i18n/setlang/" method="post"><input name="xsrf_token" value="L6IEfMajoihZ_4m6HePEYVQ3VB6rzKCqMhRdUD_gXSw6MTQ1MjAxMzUyNDM2NDE3MA" type="hidden"><input name="next" value="/youtube/v3/getting-started" type="hidden"><select style="display: none;" id="footer_language" name="language"><option value="ar">
+            العربيّة
+          </option><option value="bg">
+            български
+          </option><option value="ca">
+            català
+          </option><option value="zh-cn">
+            简体中文
+          </option><option value="zh-tw">
+            繁體中文
+          </option><option value="hr">
+            Hrvatski
+          </option><option value="cs">
+            česky
+          </option><option value="da">
+            dansk
+          </option><option value="nl" selected="selected">
+            Nederlands
+          </option><option value="en">
+            English
+          </option><option value="fa">
+            فارسی
+          </option><option value="fi">
+            suomi
+          </option><option value="fr">
+            français
+          </option><option value="de">
+            Deutsch
+          </option><option value="el">
+            Ελληνικά
+          </option><option value="he">
+            עברית
+          </option><option value="hi">
+            Hindi
+          </option><option value="hu">
+            Magyar
+          </option><option value="id">
+            Bahasa Indonesia
+          </option><option value="it">
+            italiano
+          </option><option value="ja">
+            日本語
+          </option><option value="ko">
+            한국어
+          </option><option value="lv">
+            latviešu
+          </option><option value="lt">
+            Lietuviškai
+          </option><option value="nb">
+            norsk (bokmål)
+          </option><option value="nn">
+            norsk (nynorsk)
+          </option><option value="pl">
+            polski
+          </option><option value="pt-br">
+            Português Brasileiro
+          </option><option value="pt">
+            Português
+          </option><option value="ro">
+            Română
+          </option><option value="ru">
+            Русский
+          </option><option value="sr">
+            српски
+          </option><option value="sk">
+            slovenský
+          </option><option value="sl">
+            Slovenščina
+          </option><option value="es">
+            español
+          </option><option value="es-419">
+            Español (América Latina)
+          </option><option value="sv">
+            svenska
+          </option><option value="th">
+            ภาษาไทย
+          </option><option value="tr">
+            Türkçe
+          </option><option value="uk">
+            Українська
+          </option><option value="vi">
+            Tiếng Việt
+          </option></select><span class="kd-button kd-menubutton kd-select"><div style="display: inline-block;"><div style="float: left;" class="label">
+            Nederlands
+          </div><div class="kd-disclosureindicator"></div></div></span></form></nav></footer></div><script async="" defer="defer" src="YouTube%20Data%20API%20Overview%20%C2%A0_%C2%A0%20YouTube%20Data%20API%20%C2%A0_%C2%A0%20Google%20Developers_bestanden/api.js"></script><script src="YouTube%20Data%20API%20Overview%20%C2%A0_%C2%A0%20YouTube%20Data%20API%20%C2%A0_%C2%A0%20Google%20Developers_bestanden/jquery_ui-bundle.js"></script><script src="YouTube%20Data%20API%20Overview%20%C2%A0_%C2%A0%20YouTube%20Data%20API%20%C2%A0_%C2%A0%20Google%20Developers_bestanden/a"></script><script src="YouTube%20Data%20API%20Overview%20%C2%A0_%C2%A0%20YouTube%20Data%20API%20%C2%A0_%C2%A0%20Google%20Developers_bestanden/script_foot_closure__nl.js"></script><script src="YouTube%20Data%20API%20Overview%20%C2%A0_%C2%A0%20YouTube%20Data%20API%20%C2%A0_%C2%A0%20Google%20Developers_bestanden/script_foot.js"></script><script>
+        devsite.timing.tick('jl');
+        (function($) {
+          devsite.devsite.Init($, 'devsite',
+              '[]', '',
+              'nl', true,
+              '2a0f4a9d17', '',
+              true,
+              {"098dafe57affddc137df300142652cfd": false, "6749dcb526ce9bde6993550c7d928d24": true, "993b1906435224595bd618f6f331ee45": true}, '/youtube/v3',
+              'https://developers.google.com/');
+        })(jQuery);
+
+        
+        devsite.localInit = function() {
+          
+        };
+      </script><script>
+      $('#setlang select').each(function() {
+        if (navigator.userAgent.match(/msie/i)) {
+          $(this).change(function() {
+            $('#setlang').submit();
+          });
+        } else {
+          $(this).kdSelect({'change': function() {
+            $('#setlang').submit();
+          }});
+        }
+      });
+      </script></div><ul style="display: none; position: absolute; top: 9885.07px; right: 0px; bottom: auto; left: auto; height: 512px; padding: 0px;" class="kd-menulist"><li class="kd-menulistitem">
+            العربيّة
+          </li><li class="kd-menulistitem">
+            български
+          </li><li class="kd-menulistitem">
+            català
+          </li><li class="kd-menulistitem">
+            简体中文
+          </li><li class="kd-menulistitem">
+            繁體中文
+          </li><li class="kd-menulistitem">
+            Hrvatski
+          </li><li class="kd-menulistitem">
+            česky
+          </li><li class="kd-menulistitem">
+            dansk
+          </li><li class="kd-menulistitem selected">
+            Nederlands
+          </li><li class="kd-menulistitem">
+            English
+          </li><li class="kd-menulistitem">
+            فارسی
+          </li><li class="kd-menulistitem">
+            suomi
+          </li><li class="kd-menulistitem">
+            français
+          </li><li class="kd-menulistitem">
+            Deutsch
+          </li><li class="kd-menulistitem">
+            Ελληνικά
+          </li><li class="kd-menulistitem">
+            עברית
+          </li><li class="kd-menulistitem">
+            Hindi
+          </li><li class="kd-menulistitem">
+            Magyar
+          </li><li class="kd-menulistitem">
+            Bahasa Indonesia
+          </li><li class="kd-menulistitem">
+            italiano
+          </li><li class="kd-menulistitem">
+            日本語
+          </li><li class="kd-menulistitem">
+            한국어
+          </li><li class="kd-menulistitem">
+            latviešu
+          </li><li class="kd-menulistitem">
+            Lietuviškai
+          </li><li class="kd-menulistitem">
+            norsk (bokmål)
+          </li><li class="kd-menulistitem">
+            norsk (nynorsk)
+          </li><li class="kd-menulistitem">
+            polski
+          </li><li class="kd-menulistitem">
+            Português Brasileiro
+          </li><li class="kd-menulistitem">
+            Português
+          </li><li class="kd-menulistitem">
+            Română
+          </li><li class="kd-menulistitem">
+            Русский
+          </li><li class="kd-menulistitem">
+            српски
+          </li><li class="kd-menulistitem">
+            slovenský
+          </li><li class="kd-menulistitem">
+            Slovenščina
+          </li><li class="kd-menulistitem">
+            español
+          </li><li class="kd-menulistitem">
+            Español (América Latina)
+          </li><li class="kd-menulistitem">
+            svenska
+          </li><li class="kd-menulistitem">
+            ภาษาไทย
+          </li><li class="kd-menulistitem">
+            Türkçe
+          </li><li class="kd-menulistitem">
+            Українська
+          </li><li class="kd-menulistitem">
+            Tiếng Việt
+          </li></ul><script>
+        var dataLayer = [{"scriptsafe": null, "projectName": "YouTube Data API", "language": {"requested": "nl", "served": "en"}, "signedIn": "False", "internalUser": "False"}];
+      
+      </script><span id="devsite-request-elapsed" data-request-elapsed="134.150028229"></span>
+<div class="devsite-overflow-menu" style="visibility: hidden;"></div></body></html>
