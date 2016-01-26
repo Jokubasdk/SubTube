@@ -2,7 +2,7 @@
 (function () {
 
     /* ---------------------------------- Local Variables ---------------------------------- */
-    HomeView.prototype.template         = Handlebars.compile ($("#home-tpl").html());
+   /* HomeView.prototype.template         = Handlebars.compile ($("#home-tpl").html());
     EmployeeListView.prototype.template = Handlebars.compile ($("#employee-list-tpl").html());
     EmployeeView.prototype.template     = Handlebars.compile ($("#employee-tpl").html());
     var service = new EmployeeService();
@@ -25,7 +25,7 @@
 
         router.start();
     });
-
+*/
     /* --------------------------------- Event Registration -------------------------------- */
 
     document.addEventListener ('deviceready', function()
@@ -49,5 +49,6 @@
                 );
             };
         }
+
     }, false);
 }());
