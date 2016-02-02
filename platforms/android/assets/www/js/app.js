@@ -26,6 +26,22 @@
         router.start();
     });
 */
+    class Button
+    {
+        var mObject;
+
+        button (string path)
+        {
+            mObject = document.createElement("object");
+            mObject.type = "image/svg+xml";
+            mObject.data = path;
+            document.body.appendChild(mObject);
+
+        /* https://www.youtube.com/watch?v=LYalKR2W-DU */
+
+        }
+    }
+
     /* --------------------------------- Event Registration -------------------------------- */
 
     document.addEventListener ('deviceready', function()
