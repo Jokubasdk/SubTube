@@ -44,7 +44,7 @@
     <allow-intent href="geo:*" />
     <icon src="assets/logo.png" />
     <preference name="StatusBarOverlaysWebView" value="false" />
-    <preference name="StatusBarBackgroundColor" value="#ffffff" />
+    <preference name="StatusBarBackgroundColor" value="#00FFFFFF" />
     <preference name="StatusBarStyle" value="lightcontent" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />

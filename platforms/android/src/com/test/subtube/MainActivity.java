@@ -33,9 +33,9 @@ public class MainActivity extends CordovaActivity
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate (savedInstanceState);
-        animateLoading();
+        //animateLoading();
         // Set by <content src="index.html" /> in config.xml
-        //loadUrl(launchUrl);
+        loadUrl(launchUrl);
     }
 
     private void animateLoading() {

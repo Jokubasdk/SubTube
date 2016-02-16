@@ -31,7 +31,7 @@
   
     <!--Status bar plugin-->
     <preference name="StatusBarOverlaysWebView" value="false" />
-    <preference name="StatusBarBackgroundColor" value="#ffffff" />
+    <preference name="StatusBarBackgroundColor" value="#00FFFFFF" />
     <preference name="StatusBarStyle" value="lightcontent" />
 
     <!--Splash screen plugin-->

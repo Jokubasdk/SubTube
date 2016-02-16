@@ -48,7 +48,8 @@
     {
         if (cordova.platformId == 'android')
         {
-            StatusBar.backgroundColorByHexString ("#333");
+            //StatusBar.backgroundColorByName ('transparent');
+            //StatusBar.backgroundColorByHexString ("#333333");
         }
 
 
