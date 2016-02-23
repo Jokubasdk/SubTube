@@ -25,6 +25,7 @@
     <splash density="port-mdpi" src="assets/android/SubTube/splash/splash-port-xhdpi.png" />
     <splash density="port-hdpi" src="assets/android/SubTube/splash/splash-port-xhdpi.png" />
     <splash density="port-xhdpi" src="assets/android/SubTube/splash/splash-port-xhdpi.png" />
+    <preference name="StatusBarBackgroundColor" value="#990000" />
     <name>
         SubTube
     </name>
@@ -33,6 +34,8 @@
     </description>
     <author email="HackerManiac@users.noreply.github.com">
         Vidminas Mikucionis
+        Jokubas de Kort
+        Florian Simoens
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -42,10 +45,8 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <icon src="assets/logo.png" />
+    <icon src="assets/android/SubTube/iconST.png" />
     <preference name="StatusBarOverlaysWebView" value="false" />
-    <preference name="StatusBarBackgroundColor" value="#00FFFFFF" />
-    <preference name="StatusBarStyle" value="lightcontent" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
     <preference name="LoadingDialog" value="Loading, Please wait!" />

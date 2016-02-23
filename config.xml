@@ -15,6 +15,8 @@
 
     <author email="HackerManiac@users.noreply.github.com">
         Vidminas Mikucionis
+        Jokubas de Kort
+        Florian Simoens
     </author>
 
     <content src="index.html" />
@@ -27,12 +29,10 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
 
-    <icon src="assets/logo.png" />
+    <icon src="assets/android/SubTube/iconST.png" />
   
     <!--Status bar plugin-->
     <preference name="StatusBarOverlaysWebView" value="false" />
-    <preference name="StatusBarBackgroundColor" value="#00FFFFFF" />
-    <preference name="StatusBarStyle" value="lightcontent" />
 
     <!--Splash screen plugin-->
     <preference name="SplashScreen" value="screen" />
@@ -52,6 +52,7 @@
         <splash src="assets/android/SubTube/splash/splash-port-xhdpi.png" density="port-hdpi"/>
         <splash src="assets/android/SubTube/splash/splash-port-xhdpi.png" density="port-xhdpi"/>
 
+        <preference name="StatusBarBackgroundColor" value="#990000" />
         <!--
         <icon src="res/android/ldpi.png" density="ldpi" />
         <icon src="res/android/mdpi.png" density="mdpi" />
@@ -63,6 +64,9 @@
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
+
+        <preference name="StatusBarBackgroundColor" value="#00FFFFFF" />
+        <preference name="StatusBarStyle" value="lightcontent" />
 		<!--
         iOS 8.0+
         iPhone 6 Plus

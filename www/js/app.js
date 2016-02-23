@@ -26,6 +26,7 @@
         router.start();
     });
 */
+/*
     class Button
     {
         var mObject;
@@ -37,19 +38,18 @@
             mObject.data = path;
             document.body.appendChild(mObject);
 
-        /* https://www.youtube.com/watch?v=LYalKR2W-DU */
+        //https://www.youtube.com/watch?v=LYalKR2W-DU
 
         }
     }
-
+*/
     /* --------------------------------- Event Registration -------------------------------- */
 
     document.addEventListener ('deviceready', function()
     {
-        if (cordova.platformId == 'android')
+        if (cordova.platformId == "android")
         {
-            //StatusBar.backgroundColorByName ('transparent');
-            //StatusBar.backgroundColorByHexString ("#333333");
+            alert("ANDROID");
         }
 
 
