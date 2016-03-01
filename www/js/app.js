@@ -43,6 +43,13 @@
         }
     }
 */
+
+    function onAPILoad()
+    {
+        alert ("hi");
+        gapi.client.setApiKey("AIzaSyBLgk2pR6y7LBPnG-nTpw2S8CisTZclBUs");
+        gapi.client.load('plus', 'v1').then(function() { alert('loaded.'); });
+    }
     /* --------------------------------- Event Registration -------------------------------- */
 
     document.addEventListener ('deviceready', function()
