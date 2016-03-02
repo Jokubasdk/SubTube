@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget android-versionCode="1" id="com.test.subtube" ios-CFBundleVersion="0.0.1" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Device">
+        <param name="browser-package" value="Device" />
+    </feature>
+    <name>
+        SubTube
+    </name>
+    <description>
+        Our SubTube app, a WIP.
+    </description>
+    <author email="HackerManiac@users.noreply.github.com">
+        Vidminas Mikucionis
+        Jokubas de Kort
+        Florian Simoens
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <icon src="assets/android/SubTube/iconST.png" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="LoadingDialog" value="Loading, Please wait!" />
+    <preference name="AutoHideSplashScreen" value="true" />
+</widget>
