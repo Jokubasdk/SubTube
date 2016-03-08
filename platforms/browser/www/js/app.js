@@ -1,7 +1,14 @@
-function onAPILoad() {
-    gapi.client.setApiKey("AIzaSyBLgk2pR6y7LBPnG-nTpw2S8CisTZclBUs");
-    gapi.client.load('youtube', 'v3', function () { alert("hello, we loaded youtube v3 api"); });
+// Upon loading, the Google APIs JS client automatically invokes this callback.
+googleApiClientReady = function()
+{
+    gapi.auth.init (function()
+    {
+        window.setTimeout (checkAuth, 1);
+    });
 }
+
+
+
 
 // We use an "Immediate Function" to initialize the application to avoid leaving anything behind in the global scope
 (function () {
@@ -59,6 +66,10 @@ function onAPILoad() {
             alert("ANDROID");
         }
 
+        else if (cordova.platformId == "browser")
+        {
+            alert("BROWSER mate");
+        }
         /*
         if (navigator.notification) // Override default HTML alert with native dialog
         {
