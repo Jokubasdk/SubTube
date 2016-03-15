@@ -1,6 +1,4 @@
-
-
-  // Define some variables used to remember state.
+    // Define some variables used to remember state.
     var playlistId, nextPageToken, prevPageToken;
 
     // After the API loads, call a function to get the uploads playlist ID.

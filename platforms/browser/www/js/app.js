@@ -1,15 +1,3 @@
-// Upon loading, the Google APIs JS client automatically invokes this callback.
-googleApiClientReady = function()
-{
-    gapi.auth.init (function()
-    {
-        window.setTimeout (checkAuth, 1);
-    });
-}
-
-
-
-
 // We use an "Immediate Function" to initialize the application to avoid leaving anything behind in the global scope
 (function () {
 
@@ -68,7 +56,7 @@ googleApiClientReady = function()
 
         else if (cordova.platformId == "browser")
         {
-            alert("BROWSER mate");
+            //alert("BROWSER mate");
         }
         /*
         if (navigator.notification) // Override default HTML alert with native dialog
