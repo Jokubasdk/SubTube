@@ -85,7 +85,10 @@ function displayResult (videoSnippet)
 {
 var title = videoSnippet.title;
 var videoId = videoSnippet.resourceId.videoId;
-$('#video-container').append ('<p>' + title + ' - ' + videoId + '</p>');
+$('#video-container').append ('<h1>' + title + '</h1>');
+$('#video-container').append ('<a href="http://www.youtube.com/watch?v=' + videoId + '">' +
+                              '<img src="http://img.youtube.com/vi/' + videoId + '/default.jpg"' +
+                              '</a>');
 }
 
 // Retrieve the next page of videos in the playlist.
