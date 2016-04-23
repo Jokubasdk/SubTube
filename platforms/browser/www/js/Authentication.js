@@ -65,7 +65,6 @@ function loadAPIClientInterfaces()
     //gapi.client.setApiKey ("AIzaSyBLgk2pR6y7LBPnG-nTpw2S8CisTZclBUs");
     gapi.client.load ('youtube', 'v3', function()
     {
-        alert("hello, we loaded youtube v3 api");
         handleAPILoaded();
     });
 }

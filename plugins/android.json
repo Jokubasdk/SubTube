@@ -35,6 +35,9 @@
         },
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.test.subtube"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.test.subtube"
         }
     },
     "dependent_plugins": {}

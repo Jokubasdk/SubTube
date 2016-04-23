@@ -23,28 +23,17 @@ function requestUserUploadsPlaylistId()
         playlistId = response.result.items[0].contentDetails.relatedPlaylists.uploads;
         requestVideoPlaylist (playlistId);
     });
-
-    var request2 = gapi.client.youtube.channels.list (
-    {
-        mine: true,
-        part: 'snippet'
-    });
-
-    request2.execute (function (response)
-    {
-        imageURL = response.result.items[0].snippet.thumbnails.high.url;
-    });
 }
 
 // Retrieve the list of videos in the specified playlist.
 function requestVideoPlaylist (playlistId, pageToken)
 {
-$('#video-container').html('');
-var requestOptions =
-{
-playlistId: playlistId,
-part: 'snippet',
-maxResults: 10
+    $('#video-container').html('');
+    var requestOptions =
+    {
+    playlistId: playlistId,
+    part: 'snippet',
+    maxResults: 10
 };
 
 if (pageToken)
@@ -87,8 +76,7 @@ var title = videoSnippet.title;
 var videoId = videoSnippet.resourceId.videoId;
 $('#video-container').append ('<h1>' + title + '</h1>');
 $('#video-container').append ('<a href="http://www.youtube.com/watch?v=' + videoId + '">' +
-                              '<img src="http://img.youtube.com/vi/' + videoId + '/default.jpg"' +
-                              '</a>');
+                              '<img src="' + videoSnippet.thumbnails.default.url + '"</a>');
 }
 
 // Retrieve the next page of videos in the playlist.

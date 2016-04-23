@@ -19,6 +19,10 @@
         <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
     <allow-intent href="market:*" />
     <hook src="assets/android_copy_assets.js" type="after_prepare" />
     <splash density="port-ldpi" src="assets/android/SubTube/splash/SubTube 240x320 splash.png" />
@@ -51,4 +55,5 @@
     <preference name="SplashScreenDelay" value="3000" />
     <preference name="LoadingDialog" value="Loading, Please wait!" />
     <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="AndroidPersistentFileLocation" value="Internal" />
 </widget>

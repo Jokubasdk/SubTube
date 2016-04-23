@@ -40,6 +40,9 @@
     <preference name="LoadingDialog" value="Loading, Please wait!"/>
     <preference name="AutoHideSplashScreen" value="true" />
 
+    <!--File plugin-->
+    <preference name="AndroidPersistentFileLocation" value="Internal" />
+
     <!--Hooks-->
     <!--<hook type="before_prepare" src="assets/jshint.js" />
     JSHint doesn't seem to work :(-->
