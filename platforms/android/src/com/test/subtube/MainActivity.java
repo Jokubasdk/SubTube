@@ -30,34 +30,43 @@ import org.apache.cordova.*;
 public class MainActivity extends CordovaActivity
 {
     @Override
-    public void onCreate(Bundle savedInstanceState)
+    public void onCreate (Bundle savedInstanceState)
     {
         super.onCreate (savedInstanceState);
-        //animateLoading();
+
+        if (savedInstanceState == null)
+            animateLoading();
+
+        else
+            loadUrl (launchUrl);
         // Set by <content src="index.html" /> in config.xml
-        loadUrl(launchUrl);
     }
 
-    private void animateLoading() {
+    private void animateLoading()
+    {
         setContentView(R.layout.loading);
-        ImageView loadingView = (ImageView) findViewById(R.id.loadingView);
+        ImageView loadingView = (ImageView) findViewById (R.id.loadingView);
 
-        CustomAnimationDrawable animation = new CustomAnimationDrawable() {
+        CustomAnimationDrawable animation = new CustomAnimationDrawable()
+        {
             @Override
-            void onAnimationFinish() {
-                loadUrl(launchUrl);
+            void onAnimationFinish()
+            {
+                loadUrl (launchUrl);
             }
         };
-        animation.setOneShot(true);
+
+        animation.setOneShot (true);
         final int frames = 30;
         final int frameWidth = 240;
         final int frameHeight = 320;
         final int frameDuration = 500;
-        final Bitmap bmpImage = BitmapFactory.decodeResource(getResources(), R.drawable.loading);
+        final Bitmap bmpImage = BitmapFactory.decodeResource (getResources(), R.drawable.loading);
 
-        for (int currentFrame = 0; currentFrame < frames; currentFrame++) {
+        for (int currentFrame = 0; currentFrame < frames; currentFrame++)
+        {
             BitmapDrawable frameDrawable = new BitmapDrawable (getResources(), Bitmap.createBitmap(bmpImage,currentFrame * frameWidth, 0, frameWidth, frameHeight) );
-            animation.addFrame(frameDrawable, frameDuration);
+            animation.addFrame (frameDrawable, frameDuration);
         }
 
         loadingView.setBackground (animation);

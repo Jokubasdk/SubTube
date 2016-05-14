@@ -4,23 +4,26 @@ import android.graphics.drawable.AnimationDrawable;
 import android.os.Handler;
 import android.util.Log;
 
-public abstract class CustomAnimationDrawable extends AnimationDrawable {
+public abstract class CustomAnimationDrawable extends AnimationDrawable
+{
     /** Handles the animation callback. */
     Handler mAnimationHandler;
 
-    public CustomAnimationDrawable() {
+    public CustomAnimationDrawable()
+    {
 
     }
-
+/*
     public CustomAnimationDrawable(AnimationDrawable aniDrawable) {
         // Add each frame to our animation drawable
         for (int i = 0; i < aniDrawable.getNumberOfFrames(); i++) {
             this.addFrame(aniDrawable.getFrame(i), aniDrawable.getDuration(i));
         }
     }
-
+*/
     @Override
-    public void start() {
+    public void start()
+    {
         super.start();
         /*
          * Call super.start() to call the base class start animation method.
@@ -28,9 +31,10 @@ public abstract class CustomAnimationDrawable extends AnimationDrawable {
          * duration for the animation has passed
          */
         mAnimationHandler = new Handler();
-        mAnimationHandler.postDelayed(new Runnable() {
-
-            public void run() {
+        mAnimationHandler.postDelayed (new Runnable()
+        {
+            public void run()
+            {
                 onAnimationFinish();
             }
         }, getTotalDuration());
@@ -41,12 +45,13 @@ public abstract class CustomAnimationDrawable extends AnimationDrawable {
      *
      * @return The total duration.
      */
-    public int getTotalDuration() {
-
+    public int getTotalDuration()
+    {
         int iDuration = 0;
 
-        for (int i = 0; i < this.getNumberOfFrames(); i++) {
-            iDuration += this.getDuration(i);
+        for (int i = 0; i < this.getNumberOfFrames(); i++)
+        {
+            iDuration += this.getDuration (i);
         }
 
         return iDuration;
