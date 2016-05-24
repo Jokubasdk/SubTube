@@ -50,7 +50,11 @@ function onLoad()
 
 function onDeviceReady()
 {
-    window.addEventListener ('filePluginIsReady', onFilePluginIsReady, false);
+    if (cordova.platformId == "browser" && navigator.userAgent.match (/(Chrome)/i) )
+        window.addEventListener ('filePluginIsReady', onFilePluginIsReady, false);
+
+    else
+        onFilePluginIsReady();
 }
 
 function onFilePluginIsReady()

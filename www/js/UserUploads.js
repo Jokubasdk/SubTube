@@ -1,92 +1,70 @@
 // Define some variables used to remember state.
-var playlistId, nextPageToken, prevPageToken;
+var nextPageToken, prevPageToken;
 
 // After the API loads, call a function to get the uploads playlist ID.
 function handleAPILoaded()
 {
-    requestUserUploadsPlaylistId();
+    requestSubscriptionList();
 }
 
-// Call the Data API to retrieve the playlist ID that uniquely identifies the
-// list of videos uploaded to the currently authenticated user's channel.
-function requestUserUploadsPlaylistId()
+function requestSubscriptionList (pageToken)
 {
-    // See https://developers.google.com/youtube/v3/docs/channels/list
-    var request = gapi.client.youtube.channels.list (
+    $('#video-container').html('');
+
+    var requestOptions =
     {
         mine: true,
-        part: 'contentDetails'
-    });
+        part: 'snippet',
+        maxResults: 10
+    };
+
+    if (pageToken)
+        requestOptions.pageToken = pageToken;
+
+    var request = gapi.client.youtube.subscriptions.list (requestOptions);
 
     request.execute (function (response)
     {
-        playlistId = response.result.items[0].contentDetails.relatedPlaylists.uploads;
-        requestVideoPlaylist (playlistId);
+        // Only show pagination buttons if there is a pagination token for the
+        // next or previous page of results.
+        nextPageToken = response.result.nextPageToken;
+        var nextVis = nextPageToken ? 'visible' : 'hidden';
+        $('#next-button').css ('visibility', nextVis);
+        prevPageToken = response.result.prevPageToken
+        var prevVis = prevPageToken ? 'visible' : 'hidden';
+        $('#prev-button').css ('visibility', prevVis);
+
+        var subscriptionList = response.result.items;
+
+        if (subscriptionList)
+        {
+            for (index in subscriptionList)
+            {
+                displayResult (subscriptionList [index], index);
+            }
+        }
+
+        else
+        {
+            $('#video-container').html ('Sorry you have no uploaded videos');
+        }
     });
 }
 
-// Retrieve the list of videos in the specified playlist.
-function requestVideoPlaylist (playlistId, pageToken)
-{
-    $('#video-container').html('');
-    var requestOptions =
-    {
-    playlistId: playlistId,
-    part: 'snippet',
-    maxResults: 10
-};
-
-if (pageToken)
-requestOptions.pageToken = pageToken;
-
-var request = gapi.client.youtube.playlistItems.list (requestOptions);
-
-request.execute (function (response)
-{
-// Only show pagination buttons if there is a pagination token for the
-// next or previous page of results.
-nextPageToken = response.result.nextPageToken;
-var nextVis = nextPageToken ? 'visible' : 'hidden';
-$('#next-button').css ('visibility', nextVis);
-prevPageToken = response.result.prevPageToken
-var prevVis = prevPageToken ? 'visible' : 'hidden';
-$('#prev-button').css ('visibility', prevVis);
-
-var playlistItems = response.result.items;
-
-if (playlistItems)
-{
-$.each(playlistItems, function (index, item)
-{
-displayResult (item.snippet);
-});
-}
-
-else
-{
-$('#video-container').html ('Sorry you have no uploaded videos');
-}
-});
-}
-
 // Create a listing for a video.
-function displayResult (videoSnippet)
+function displayResult (subscriptionChannel, index)
 {
-var title = videoSnippet.title;
-var videoId = videoSnippet.resourceId.videoId;
-$('#video-container').append ('<h1>' + title + '</h1>');
-$('#video-container').append ('<a href="http://www.youtube.com/watch?v=' + videoId + '">' +
-                              '<img src="' + videoSnippet.thumbnails.default.url + '"</a>');
+    $('#video-container').append ('<div class="subscriptionBox">'+ subscriptionChannel.snippet.title + '<br />' +
+                                  '<img src="' + subscriptionChannel.snippet.thumbnails.high.url + '" width="99%" height="49%"/>' + '</div>' );
 }
-
 // Retrieve the next page of videos in the playlist.
 function nextPage()
 {
-requestVideoPlaylist (playlistId, nextPageToken);
+    requestSubscriptionList (nextPageToken);
 }
 
 // Retrieve the previous page of videos in the playlist.
 function previousPage()
 {
-requestVideoPlaylist (playlistId, prevPageToken);
+    requestSubscriptionList (prevPageToken);
 }

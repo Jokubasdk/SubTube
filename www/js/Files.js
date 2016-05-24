@@ -6,24 +6,11 @@ var errorHandler = function (fileName, e)
 
 function createFile (fileName)
 {
-    var persistentDirectory;
-/*
-    if (cordova.platformId == "browser" && navigator.userAgent.match (/(Chrome)/i) )
-        persistentDirectory = "cdvfile://localhost/persistent/";
-
-    else
-*/
-        persistentDirectory = cordova.file.dataDirectory;
-
-    console.log (navigator.userAgent);
-    console.log (navigator.userAgent.match (/(Chrome)/i));
-    console.log (persistentDirectory);
-
     if (cordova.platformId == "browser")
     {
         window.resolveLocalFileSystemURL
         (
-            persistentDirectory,
+            cordova.file.dataDirectory,
             function (directoryEntry)
             {
                 directoryEntry.getFile
@@ -75,20 +62,24 @@ function writeToFile (fileName, data)
         fileName,
         function (file)
         {
-            fileWriter.onwriteend = function (e)
+            file.createWriter(function (fileWriter)
             {
-                // for real-world usage, you might consider passing a success callback
-                console.log ('Write of file "' + fileName + '"" completed.');
-            };
+                fileWriter.onwriteend = function (e)
+                {
+                    // for real-world usage, you might consider passing a success callback
+                    console.log ('Write of file "' + fileName + '"" completed.');
+                };
 
-            fileWriter.onerror = function (e)
-            {
-                // you could hook this up with our global error handler, or pass in an error callback
-                console.log ('Write failed: ' + e.toString());
-            };
+                fileWriter.onerror = function (e)
+                {
+                    errorHandler(fileName, e);
+                    // you could hook this up with our global error handler, or pass in an error callback
+                    //console.log ('Write failed: ' + e.toString());
+                };
 
-            var blob = new Blob ([data], { type: 'text/plain' });
-            fileWriter.write (blob);
+                var blob = new Blob ([data], { type: 'text/plain' });
+                fileWriter.write (blob);
+            }, errorHandler(fileName, null));
         }
     );
 }

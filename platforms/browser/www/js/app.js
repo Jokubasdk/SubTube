@@ -43,36 +43,33 @@
 
     
     /* --------------------------------- Event Registration -------------------------------- */
-document.addEventListener
-(
-    'deviceready',
-    function()
-    {
-        console.log ("device is ready");
-    },
-    false
-);
+function onLoad()
+{
+    document.addEventListener ('deviceready', onDeviceReady, false);
+}
 
-window.addEventListener
-(
-    'filePluginIsReady',
-    function()
+function onDeviceReady()
+{
+    if (cordova.platformId == "browser" && navigator.userAgent.match (/(Chrome)/i) )
+        window.addEventListener ('filePluginIsReady', onFilePluginIsReady, false);
+
+    else
+        onFilePluginIsReady();
+}
+
+function onFilePluginIsReady()
+{
+    if (cordova.platformId == "browser")
     {
-        if (cordova.platformId == "browser")
-        {
-            createFile  ('UserFolders.json');
-            /*
-            writeToFile ('UserFolders.json', {foo: 'bar'} );
-            readFromFile
-            (
-                'UserFolders.json',
-                function (data)
-                {
-                    console.log (data.foo);
-                }
-            );
-            */
-        }
-    },
-    false
-);
+        createFile  ('UserFolders.json');
+        writeToFile ('UserFolders.json', {foo: 'bar'} );
+        readFromFile
+        (
+            'UserFolders.json',
+            function (data)
+            {
+                console.log (data);
+            }
+        );
+    }
+}
