@@ -50,6 +50,7 @@ function onLoad()
 
 function onDeviceReady()
 {
+<<<<<<< HEAD
     if (cordova.platformId == "browser" && navigator.userAgent.match (/(Chrome)/i) )
         window.addEventListener ('filePluginIsReady', onFilePluginIsReady, false);
 
@@ -57,10 +58,19 @@ function onDeviceReady()
         onFilePluginIsReady();
 }
 
+=======
+    window.addEventListener ('filePluginIsReady', onFilePluginIsReady, false);
+}
+
+>>>>>>> origin/master
 function onFilePluginIsReady()
 {
     if (cordova.platformId == "browser")
     {
+<<<<<<< HEAD
+=======
+        console("hello browser");
+>>>>>>> origin/master
         createFile  ('UserFolders.json');
         writeToFile ('UserFolders.json', {foo: 'bar'} );
         readFromFile
@@ -70,6 +80,28 @@ function onFilePluginIsReady()
             {
                 console.log (data);
             }
+<<<<<<< HEAD
+=======
+            /*
+                createFile();
+
+                function addFolder (title)
+                {
+                    write
+                }
+
+                writeToFile('example.json', { foo: 'bar' });
+
+                readFromFile('example.json', function (data)
+                {
+                    var i=0;
+                    for( key in data){
+                        console.log (i+" key = " + key);
+                        i=i+1;
+                    }
+                });
+                */
+>>>>>>> origin/master
         );
     }
 }

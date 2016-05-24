@@ -6,6 +6,22 @@ var errorHandler = function (fileName, e)
 
 function createFile (fileName)
 {
+<<<<<<< HEAD
+=======
+    var persistentDirectory;
+/*
+    if (cordova.platformId == "browser" && navigator.userAgent.match (/(Chrome)/i) )
+        persistentDirectory = "cdvfile://localhost/persistent/";
+
+    else
+*/
+        persistentDirectory = cordova.file.dataDirectory;
+
+    console.log (navigator.userAgent);
+    console.log (navigator.userAgent.match (/(Chrome)/i));
+    console.log (persistentDirectory);
+
+>>>>>>> origin/master
     if (cordova.platformId == "browser")
     {
         window.resolveLocalFileSystemURL
@@ -92,8 +108,15 @@ function readFromFile (fileName, cb)
         {
             var reader = new FileReader();
 
+            reader.onerror = function(event)
+            {
+                console.log("Could not read file " + fileName);
+                reader.abort();
+            }
+
             reader.onloadend = function (e)
             {
+                console.log("File " + fileName + " read.");
                 cb (JSON.parse (this.result) );
             };
 

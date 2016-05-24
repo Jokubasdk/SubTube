@@ -93,8 +93,15 @@ function readFromFile (fileName, cb)
         {
             var reader = new FileReader();
 
+            reader.onerror = function(event)
+            {
+                console.log("Could not read file " + fileName);
+                reader.abort();
+            }
+
             reader.onloadend = function (e)
             {
+                console.log("File " + fileName + " read.");
                 cb (JSON.parse (this.result) );
             };
 
