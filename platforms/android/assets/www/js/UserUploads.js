@@ -12,7 +12,7 @@ function handleAPILoaded()
 function requestUserUploadsPlaylistId()
 {
     // See https://developers.google.com/youtube/v3/docs/channels/list
-    var request = gapi.client.youtube.channels.list (
+    var request = gapi.client.youtube.subscriptions.list (
     {
         mine: true,
         part: 'contentDetails'
@@ -39,7 +39,7 @@ function requestVideoPlaylist (playlistId, pageToken)
 if (pageToken)
 requestOptions.pageToken = pageToken;
 
-var request = gapi.client.youtube.playlistItems.list (requestOptions);
+var request = gapi.client.youtube.subscriptions.list (requestOptions);
 
 request.execute (function (response)
 {
@@ -75,7 +75,7 @@ function displayResult (videoSnippet)
 var title = videoSnippet.title;
 var videoId = videoSnippet.resourceId.videoId;
 $('#video-container').append ('<h1>' + title + '</h1>');
-$('#video-container').append ('<a href="http://www.youtube.com/watch?v=' + videoId + '">' +
+$('#video-container').append ('<a href="http://www.youtube.com/watch?v=' + channelId + '">' +
                               '<img src="' + videoSnippet.thumbnails.default.url + '"</a>');
 }
 

@@ -220,8 +220,6 @@
                     }
                 });
                 */
-                if
-                createFile ('UserFolders.json');
         }
 
     }, false);
