@@ -1,6 +1,3 @@
-// We use an "Immediate Function" to initialize the application to avoid leaving anything behind in the global scope
-(function () {
-
     /* ---------------------------------- Local Variables ---------------------------------- */
    /* HomeView.prototype.template         = Handlebars.compile ($("#home-tpl").html());
     EmployeeListView.prototype.template = Handlebars.compile ($("#employee-list-tpl").html());
@@ -46,66 +43,34 @@
 
     
     /* --------------------------------- Event Registration -------------------------------- */
+document.addEventListener
+(
+    'deviceready',
+    function()
+    {
+        console.log ("device is ready");
+    },
+    false
+);
 
-    //Returns Mozilla if mozilla user agent:
-    //navigator.userAgent.match (/(Mozilla)/i)
-
-    document.addEventListener ('deviceready', function()
+window.addEventListener
+(
+    'filePluginIsReady',
+    function()
     {
         if (cordova.platformId == "browser")
         {
-            var errorHandler = function (fileName, e)
-            {
-                var msg = '';
-
-                switch (e.code)
+            createFile  ('UserFolders.json');
+            /*
+            writeToFile ('UserFolders.json', {foo: 'bar'} );
+            readFromFile
+            (
+                'UserFolders.json',
+                function (data)
                 {
-                    case FileError.QUOTA_EXCEEDED_ERR:
-                        msg = 'Storage quota exceeded';
-                        break;
-                    case FileError.NOT_FOUND_ERR:
-                        msg = 'File not found';
-                        break;
-                    case FileError.SECURITY_ERR:
-                        msg = 'Security error';
-                        break;
-                    case FileError.INVALID_MODIFICATION_ERR:
-                        msg = 'Invalid modification';
-                        break;
-                    case FileError.INVALID_STATE_ERR:
-                        msg = 'Invalid state';
-                        break;
-                    default:
-                        msg = 'Unknown error';
-                        break;
-                };
-
-                console.log ('Error (' + fileName + '): ' + msg);
-            }
-
-            function createFile (fileName)
-            {
-                if (cordova.platformId == "browser")
-                {
-                    window.resolveLocalFileSystemURL
-                    (
-                        cordova.file.dataDirectory,
-                        function (directoryEntry)
-                        {
-                            directoryEntry.getFile
-                            (
-                                fileName,
-                                { create: true },
-                                function()
-                                {
-                                    console.log (fileName + " was created");
-                                },
-                                errorHandler.bind (null, fileName)
-                            );
-                        },
-                        errorHandler.bind (null, fileName)
-                    );
+                    console.log (data.foo);
                 }
+<<<<<<< HEAD
 
                 else if (cordova.platformId == "android")
                 {
@@ -220,7 +185,11 @@
                     }
                 });
                 */
+=======
+            );
+            */
+>>>>>>> 1a0601c488b6ad45b1d65732734a8b9a2d1b4622
         }
-
-    }, false);
-}());
+    },
+    false
+);

@@ -1,6 +1,3 @@
-// We use an "Immediate Function" to initialize the application to avoid leaving anything behind in the global scope
-(function () {
-
     /* ---------------------------------- Local Variables ---------------------------------- */
    /* HomeView.prototype.template         = Handlebars.compile ($("#home-tpl").html());
     EmployeeListView.prototype.template = Handlebars.compile ($("#employee-list-tpl").html());
@@ -46,121 +43,30 @@
 
     
     /* --------------------------------- Event Registration -------------------------------- */
+function onLoad()
+{
+    document.addEventListener ('deviceready', onDeviceReady, false);
+}
 
-    //Returns Mozilla if mozilla user agent:
-    //navigator.userAgent.match (/(Mozilla)/i)
+function onDeviceReady()
+{
+    window.addEventListener ('filePluginIsReady', onFilePluginIsReady, false);
+}
 
-    document.addEventListener ('deviceready', function()
+function onFilePluginIsReady()
+{
+    if (cordova.platformId == "browser")
     {
-        if (cordova.platformId == "browser")
-        {
-            var errorHandler = function (fileName, e)
+        createFile  ('UserFolders.json');
+        writeToFile ('UserFolders.json', {foo: 'bar'} );
+        readFromFile
+        (
+            'UserFolders.json',
+            function (data)
             {
-                var msg = '';
-
-                switch (e.code)
-                {
-                    case FileError.QUOTA_EXCEEDED_ERR:
-                        msg = 'Storage quota exceeded';
-                        break;
-                    case FileError.NOT_FOUND_ERR:
-                        msg = 'File not found';
-                        break;
-                    case FileError.SECURITY_ERR:
-                        msg = 'Security error';
-                        break;
-                    case FileError.INVALID_MODIFICATION_ERR:
-                        msg = 'Invalid modification';
-                        break;
-                    case FileError.INVALID_STATE_ERR:
-                        msg = 'Invalid state';
-                        break;
-                    default:
-                        msg = 'Unknown error';
-                        break;
-                };
-
-                console.log ('Error (' + fileName + '): ' + msg);
+                console.log (data);
             }
-
-            function createFile (fileName)
-            {
-                if (cordova.platformId == "browser")
-                {
-                    window.resolveLocalFileSystemURL
-                    (
-                        cordova.file.dataDirectory,
-                        function (directoryEntry)
-                        {
-                            directoryEntry.getFile
-                            (
-                                fileName,
-                                { create: true },
-                                function()
-                                {
-                                    console.log (fileName + " was created");
-                                },
-                                errorHandler.bind (null, fileName)
-                            );
-                        },
-                        errorHandler.bind (null, fileName)
-                    );
-                }
-
-                else if (cordova.platformId == "android")
-                {
-                 //todo
-                }
-            }
-
-            function openFile (fileName, successHandler)
-            {
-                window.resolveLocalFileSystemURL
-                (
-                    cordova.file.dataDirectory,
-                    function (directoryEntry)
-                    {
-                        directoryEntry.getFile
-                        (
-                            fileName,
-                            {},
-                            successHandler,
-                            errorHandler.bind (null, fileName)
-                        );
-                    },
-                    errorHandler.bind (null, fileName)
-                );
-            }
-
-            function writeToFile (fileName, data)
-            {
-                data = JSON.stringify (data, null, '\t');
-
-                openFile
-                (
-                    fileName,
-                    function (fileEntry)
-                    {
-                        fileWriter.onwriteend = function (e)
-                        {
-                            // for real-world usage, you might consider passing a success callback
-                            console.log('Write of file "' + fileName + '"" completed.');
-                        };
-
-                        fileWriter.onerror = function (e)
-                        {
-                            // you could hook this up with our global error handler, or pass in an error callback
-                            console.log('Write failed: ' + e.toString());
-                        };
-
-
-
-
-                        var blob = new Blob([data], { type: 'text/plain' });
-                        fileWriter.write(blob);
-                    }
-                );
-            }
+<<<<<<< HEAD
             /*)
                     window.resolveLocalFileSystemURL (cordova.file.dataDirectory, function (directoryEntry)
                     {
@@ -224,3 +130,8 @@
 
     }, false);
 }());
+=======
+        );
+    }
+}
+>>>>>>> 1a0601c488b6ad45b1d65732734a8b9a2d1b4622
