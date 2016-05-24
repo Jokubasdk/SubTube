@@ -43,130 +43,31 @@
 
     
     /* --------------------------------- Event Registration -------------------------------- */
-document.addEventListener
-(
-    'deviceready',
-    function()
-    {
-        console.log ("device is ready");
-    },
-    false
-);
+function onLoad()
+{
+    document.addEventListener ('deviceready', onDeviceReady, false);
+}
 
-window.addEventListener
-(
-    'filePluginIsReady',
-    function()
+function onDeviceReady()
+{
+    window.addEventListener ('filePluginIsReady', onFilePluginIsReady, false);
+}
+
+function onFilePluginIsReady()
+{
+    if (cordova.platformId == "browser")
     {
-        if (cordova.platformId == "browser")
-        {
-            createFile  ('UserFolders.json');
+        console("hello browser");
+        createFile  ('UserFolders.json');
+        writeToFile ('UserFolders.json', {foo: 'bar'} );
+        readFromFile
+        (
+            'UserFolders.json',
+            function (data)
+            {
+                console.log (data);
+            }
             /*
-            writeToFile ('UserFolders.json', {foo: 'bar'} );
-            readFromFile
-            (
-                'UserFolders.json',
-                function (data)
-                {
-                    console.log (data.foo);
-                }
-<<<<<<< HEAD
-
-                else if (cordova.platformId == "android")
-                {
-                 //todo
-                }
-            }
-
-            function openFile (fileName, successHandler)
-            {
-                window.resolveLocalFileSystemURL
-                (
-                    cordova.file.dataDirectory,
-                    function (directoryEntry)
-                    {
-                        directoryEntry.getFile
-                        (
-                            fileName,
-                            {},
-                            successHandler,
-                            errorHandler.bind (null, fileName)
-                        );
-                    },
-                    errorHandler.bind (null, fileName)
-                );
-            }
-
-            function writeToFile (fileName, data)
-            {
-                data = JSON.stringify (data, null, '\t');
-
-                openFile
-                (
-                    fileName,
-                    function (fileEntry)
-                    {
-                        fileWriter.onwriteend = function (e)
-                        {
-                            // for real-world usage, you might consider passing a success callback
-                            console.log('Write of file "' + fileName + '"" completed.');
-                        };
-
-                        fileWriter.onerror = function (e)
-                        {
-                            // you could hook this up with our global error handler, or pass in an error callback
-                            console.log('Write failed: ' + e.toString());
-                        };
-
-
-
-
-                        var blob = new Blob([data], { type: 'text/plain' });
-                        fileWriter.write(blob);
-                    }
-                );
-            }
-            /*)
-                    window.resolveLocalFileSystemURL (cordova.file.dataDirectory, function (directoryEntry)
-                    {
-                        directoryEntry.getFile (fileName, {}, function (fileEntry)
-                        {
-                            fileEntry.createWriter (function (fileWriter)
-                            {
-                                fileWriter.onwriteend = function (e)
-                                {
-                                    // for real-world usage, you might consider passing a success callback
-                                    console.log('Write of file "' + fileName + '"" completed.');
-                                };
-
-                                fileWriter.onerror = function (e)
-                                {
-                                    // you could hook this up with our global error handler, or pass in an error callback
-                                    console.log('Write failed: ' + e.toString());
-                                };
-
-                                var blob = new Blob([data], { type: 'text/plain' });
-                                fileWriter.write(blob);
-                            }, errorHandler.bind(null, fileName));
-                        }, errorHandler.bind(null, fileName));
-                    }, errorHandler.bind(null, fileName) );
-                }
-*/
-                function readFromFile(fileName, cb) {
-                        var pathToFile = cordova.file.dataDirectory + fileName;
-                        window.resolveLocalFileSystemURL(pathToFile, function (fileEntry) {
-                            fileEntry.file(function (file) {
-                                var reader = new FileReader();
-
-                                reader.onloadend = function (e) {
-                                    cb(JSON.parse(this.result));
-                                };
-
-                                reader.readAsText(file);
-                            }, errorHandler.bind(null, fileName));
-                        }, errorHandler.bind(null, fileName));
-                    }
-/*
                 createFile();
 
                 function addFolder (title)
@@ -185,11 +86,6 @@ window.addEventListener
                     }
                 });
                 */
-=======
-            );
-            */
->>>>>>> 1a0601c488b6ad45b1d65732734a8b9a2d1b4622
-        }
-    },
-    false
-);
+        );
+    }
+}
